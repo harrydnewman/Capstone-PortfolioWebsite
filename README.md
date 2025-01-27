@@ -18,3 +18,5 @@
 - german population thing (graphing)
 
 ### Update and add resume and about me to website
+
+### Search and tags and stuff
