@@ -7,7 +7,7 @@ export default function Zipcodeclock(){
                 
                 {/* i want iframe here with zipcode clock */}
                 <div className={styles.iframeContainer}>
-                <iframe src="https://zipcodeclock.harrydnewman.com" title="W3Schools Free Online Web Tutorials"></iframe>
+                <iframe src="https://zipcodeclock.harrydnewman.com" title="ZipCode Clock iFrame"></iframe>
                 </div>
                 
             </div>
