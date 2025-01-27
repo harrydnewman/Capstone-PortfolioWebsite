@@ -1,8 +1,15 @@
-# React + Vite
+# Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## To Do
 
-Currently, two official plugins are available:
+### Add Portfolio Pages for Following Items
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- zipcode clock (code)
+- chattech (code + museums??)
+- brainrot archive (code)
+- catalist (ux)
+- hell on earth (code + game design)
+- velociraptor (physical/cnc)
+- truth or dare (storytelling)
+- cunty roads (p comp)
+- german population thing (graphing)
