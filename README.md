@@ -4,9 +4,12 @@
 
 ### Add Portfolio Pages for Following Items:
 
+- Collect all my projects I have that I like!!
+
 - zipcode clock (code)
 - chattech (code + museums??)
 - brainrot archive (code)
+- like everything from networked media
 - catalist (ux)
 - hell on earth (code + game design)
 - velociraptor (physical/cnc)
