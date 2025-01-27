@@ -1,0 +1,44 @@
+.MainDiv {
+    width: 100%;
+    background-color: pink;
+    display: flex;
+    flex-direction: row;
+}
+
+.Left {
+    width: 50%;
+    background-color: aqua;
+    padding: 1%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Right {
+    width: 50%;
+    background-color: rgb(72, 255, 0);
+    padding: 5%;
+}
+
+.zipCodeClockiFrame {
+    width: 100%;
+}
+
+.iframeContainer {
+    transform: scale(0.8); /* Zoom out to 80% */
+    transform-origin: 0 0; /* Set origin to top-left */
+    width: 125%; /* Adjust width to compensate for scaling */
+    height: 125%; /* Adjust height to compensate for scaling */
+    border: none;
+}
+
+.iframeContainer iframe {
+    width: 100%;
+    height: 500px;
+    
+}
+
+
+
+
