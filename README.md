@@ -2,7 +2,7 @@
 
 ## To Do
 
-### Add Portfolio Pages for Following Items
+### Add Portfolio Pages for Following Items:
 
 - zipcode clock (code)
 - chattech (code + museums??)
@@ -13,3 +13,5 @@
 - truth or dare (storytelling)
 - cunty roads (p comp)
 - german population thing (graphing)
+
+### Update and add resume and about me to website
