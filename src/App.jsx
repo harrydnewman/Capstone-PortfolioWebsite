@@ -34,7 +34,7 @@ export default function App() {
         <Route path="/blog" element={<Blog />} />
         {/* portfolio routes */}
         <Route path="/portfolio/brainrotarchive" element={<BrainrotArchive />} />
-        <Route path="/portfolio/catalist" element={<Catalist/>}/>
+        <Route path="/portfolio/catalist" element={<Catalist/>}/> {/* html basically done, now just needs css */}
         <Route path="/portfolio/chattech" element={<ChatTech />} />
         <Route path="/portfolio/crossword" element={<Crossword />} />
         <Route path="/portfolio/cuntyroads" element={<CuntyRoads />} />

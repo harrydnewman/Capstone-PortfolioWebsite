@@ -15,12 +15,14 @@
 
 .TableOfContents {
     width: 20%;
+    /* i want the toc fixed as you scroll */
 }
 
 .documentation {
     width: 80%;
     padding-left: 3%;
-    padding-right: 3%;
+    padding-right: 10%;
+    margin-bottom: 20px;
 }
 
 .documentation img {
