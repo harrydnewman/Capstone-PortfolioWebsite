@@ -1,0 +1,42 @@
+.Gallery {
+    margin-left: 20px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    column-count: 3; /* Number of columns for larger screens */
+    column-gap: 10px;
+    margin-bottom: 40px;
+    
+}
+
+.portfolioItem {
+    break-inside: avoid-column;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: transform 0.5s;
+    /* border: 1px solid black; */
+}
+
+.iframeContainer {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    display: block;
+    transition: transform 0.3s; /* Add transition to iframeContainer */
+}
+
+.iframeContainer:hover {
+    cursor: pointer;
+    transform: scale(1.03); /* Hover effect applied here */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow to emphasize hover */
+}
+
+/* No hover effect needed on iframe itself */
+.iframeContainer iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: none;
+    pointer-events: none; /* Prevent iframe from blocking hover on iframeContainer */
+}

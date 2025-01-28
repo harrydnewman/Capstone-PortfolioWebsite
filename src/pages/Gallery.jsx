@@ -1,9 +1,36 @@
+import styles from '../styles/PortfolioGallery.module.css'
 
-
-export default function Gallery(){
+export default function Gallery() {
     return (
         <div>
             <h1>Gallery</h1>
+
+            <div className={styles.Gallery}>
+                <div className={styles.portfolioItem}>
+                    <div className={styles.iframeContainer}>
+                        <iframe src="https://zipcodeclock.harrydnewman.com" title="ZipCode Clock iFrame"></iframe>
+                    </div>
+                    <div className={styles.projectName}>
+                        <h2>ZipCode Clock</h2>
+                    </div>
+                </div>
+                <div className={styles.portfolioItem}>
+                    <div className={styles.iframeContainer}>
+                        <iframe src="https://zipcodeclock.harrydnewman.com" title="ZipCode Clock iFrame"></iframe>
+                    </div>
+                    <div className={styles.projectName}>
+                        <h2>ZipCode Clock</h2>
+                    </div>
+                </div>
+                <div className={styles.portfolioItem}>
+                    <div className={styles.iframeContainer}>
+                        <iframe src="https://zipcodeclock.harrydnewman.com" title="ZipCode Clock iFrame"></iframe>
+                    </div>
+                    <div className={styles.projectName}>
+                        <h2>ZipCode Clock</h2>
+                    </div>
+                </div>
+            </div>
 
             {/* items:
                 - zipcode clock (code)

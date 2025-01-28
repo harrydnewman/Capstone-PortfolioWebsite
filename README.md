@@ -15,6 +15,7 @@
 - velociraptor (physical/cnc)
 - truth or dare (storytelling)
 - cunty roads (p comp)
+- taskr (eventhough its not done)
 - german population thing (graphing)
 
 ### Update and add resume and about me to website
