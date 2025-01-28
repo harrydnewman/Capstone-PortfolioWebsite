@@ -15,7 +15,21 @@ export default function Catalist() {
         </div>
         <div className={styles.bodySection}>
             <div className={styles.TableOfContents}>
-                <p>Hi</p>
+                <a href='#problemStatement'>Problem Statement</a>
+                <a href='#hmw'>How Might Wes</a>
+                <a href='#RandA'>Research and Analysis</a>
+                <a href='#persona'>Persona</a>
+                <a href='#csjm'>Current State Journey Map</a>
+                <a href='#companal'>Competitive Analysis</a>
+                <a href='#futurestatejourney'>Future State Journey Map</a>
+                <a href='#flowDiagram'>Flow Diagram</a>
+                <a href='#styleguide'>Style Guide</a>
+                <a href='#featurelist'>Feature List</a>
+                <a href='#figmaprototype'>Figma Prototype</a>
+                <a href='#testingEvidence'>Testing Evidence</a>
+                <a href='#analysis'>Analysis</a>
+                <a href='#nextsteps'>Next Steps</a>
+                <a href='#lessons'>Lessons Learned</a>
             </div>
 
             <div className={styles.documentation}>
@@ -264,10 +278,10 @@ export default function Catalist() {
 
                 <h3 id='testingEvidence'>Testing Evidence:</h3>
                 {/* NEED TO COME BACK AND FIX THIS  */}
-                <h2>User Test 1</h2>
-                <h3>Test Participant: Keels Braga</h3>
+                <h4>User Test 1</h4>
+                <h5>Test Participant: Keels Braga</h5>
 
-                <h4>Goal Creation:</h4>
+                <h5>Goal Creation:</h5>
                 <ul>
                     <li><strong>Task:</strong> Create a new continuous goal that occurs daily between 7AM - 3PM with a notification reminder for a specific time.</li>
                     <li><strong>Feedback:</strong>
@@ -279,7 +293,7 @@ export default function Catalist() {
                     <li><strong>Time:</strong> Took a while due to difficulty with text boxes.</li>
                 </ul>
 
-                <h4>Task Management:</h4>
+                <h5>Task Management:</h5>
                 <ul>
                     <li><strong>Task:</strong> Access a long-term goal and mark subtasks as complete.</li>
                     <li><strong>Feedback:</strong>
@@ -290,7 +304,7 @@ export default function Catalist() {
                     <li><strong>Time:</strong> Participant was slow but enjoyed the experience.</li>
                 </ul>
 
-                <h4>Interacting with Friends:</h4>
+                <h5>Interacting with Friends:</h5>
                 <ul>
                     <li><strong>Task:</strong> View a friend's goal progress and send a nudge to encourage goal completion.</li>
                     <li><strong>Feedback:</strong>
@@ -301,10 +315,10 @@ export default function Catalist() {
                     <li><strong>Time:</strong> Participant navigated relatively quickly but noted that they wished the nudge buttons were animated.</li>
                 </ul>
 
-                <h2>User Test 2</h2>
-                <h3>Test Participant: Nicolas Lucente</h3>
+                <h4>User Test 2</h4>
+                <h5>Test Participant: Nicolas Lucente</h5>
 
-                <h4>Goal Creation:</h4>
+                <h5>Goal Creation:</h5>
                 <ul>
                     <li><strong>Task:</strong> Create a new long-term goal with two subtasks and automatic time notifications.</li>
                     <li><strong>Feedback:</strong>
@@ -315,7 +329,7 @@ export default function Catalist() {
                     <li><strong>Time:</strong> Completed task within 18 seconds.</li>
                 </ul>
 
-                <h4>Task Management:</h4>
+                <h5>Task Management:</h5>
                 <ul>
                     <li><strong>Task:</strong> Access a long-term goal and mark subtasks as complete.</li>
                     <li><strong>Feedback:</strong>
@@ -326,7 +340,7 @@ export default function Catalist() {
                     <li><strong>Time:</strong> Completed task within 9 seconds.</li>
                 </ul>
 
-                <h4>Interacting with Friends:</h4>
+                <h5>Interacting with Friends:</h5>
                 <ul>
                     <li><strong>Task:</strong> View a friend's goal progress and send a nudge to encourage goal completion.</li>
                     <li><strong>Feedback:</strong>
