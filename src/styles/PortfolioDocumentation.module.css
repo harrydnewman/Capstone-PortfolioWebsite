@@ -1,0 +1,31 @@
+.main {
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    width: 100%;
+}
+
+.bodySection {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.TableOfContents {
+    width: 20%;
+}
+
+.documentation {
+    width: 80%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.documentation img {
+    max-width: 75%;
+    height: auto;
+}
+
+/* need to come back and finish with this */

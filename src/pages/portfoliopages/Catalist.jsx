@@ -8,12 +8,18 @@ import FigmaFlow from '../../assets/images/Catalist/figmaflow.png'
 
 export default function Catalist() {
     return (
-        <div>
-            <h1>Catalist</h1>
-            <h2>Info Here (also quick blurb about what it is)</h2>
+        <div className={styles.main}>
+        <div className={styles.title}>
+        <h1>Catalist</h1>
+        <h2>Info Here (also quick blurb about what it is)</h2>
+        </div>
+        <div className={styles.bodySection}>
+            <div className={styles.TableOfContents}>
+                <p>Hi</p>
+            </div>
 
             <div className={styles.documentation}>
-                <h3>Problem Statement</h3>
+                <h3 id='problemStatement'>Problem Statement</h3>
                 <p>For college students, it’s a constant challenge to efficiently manage tasks and goals. Every semester, these individuals juggle numerous assignments, extracurricular activities, and personal commitments in order to excel academically and personally. This is especially true for students with a diverse range of interests and responsibilities, as it becomes increasingly difficult to prioritize and organize tasks effectively.</p>
 
                 <h3 id='hmw'>How Might Wes</h3>
@@ -367,6 +373,7 @@ export default function Catalist() {
                 
 
             </div>
+        </div>
         </div>
     )
 }
