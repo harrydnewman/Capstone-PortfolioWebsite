@@ -40,3 +40,24 @@
     border: none;
     pointer-events: none; /* Prevent iframe from blocking hover on iframeContainer */
 }
+
+.imageContainer {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.imageContainer img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+}
+
+.imageContainer:hover {
+    cursor: pointer;
+    transform: scale(1.03); /* Hover effect applied here */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow to emphasize hover */
+}
