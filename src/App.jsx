@@ -24,8 +24,9 @@ import TruthOrDare from "./pages/portfoliopages/TruthOrDare";
 import Velociraptor from "./pages/portfoliopages/Velociraptor";
 import Zipcodeclock from "./pages/portfoliopages/ZipCodeClock";
 
-export default function App() {
+function App() {
   return (
+    <div className="App">
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -52,5 +53,8 @@ export default function App() {
         <Route path="/portfolio/zipcodeclock" element={<Zipcodeclock />} />
       </Routes>
     </Router>
+    </div>
   )
 }
+
+export default App;
