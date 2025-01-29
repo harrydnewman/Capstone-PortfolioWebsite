@@ -1,25 +1,32 @@
-import styles from '../../styles/PortfolioItem.module.css'
-
+import styles from '../../styles/PortfolioDocumentation.module.css'
+import TitleSection from '../../components/TitleSection'
 export default function Zipcodeclock(){
     return (
-        <div className={styles.MainDiv}>
-            <div className={styles.Left}>
+        <div className={styles.main}>
+        <TitleSection 
+                        title="ZipCode Clock"
+                        name="Harrison Newman"
+                        date="February 23rd, 2024"
+                        course="Networked Media"
+                        skills={["JavaScript"]}
+                    />
+           
                 
                 {/* i want iframe here with zipcode clock */}
                 <div className={styles.iframeContainer}>
                 <iframe src="https://zipcodeclock.harrydnewman.com" title="ZipCode Clock iFrame"></iframe>
                 </div>
                 
-            </div>
-            <div className={styles.Right}>
-                <h1 className={styles.Title}>Zip Code Clock</h1>
-                <p className={styles.Description}>
-                This is a clock I created for my Networked Media class. I used zipcodes from both the US and Mexico and used census data from both countries to collect the zipcodes and their coordinates, After this, I used leaflet, a free map api, and some javascript to connect my zipcodes to my clock.</p>
 
-                <p className={styles.Description}>The clock works by taking the time and searching through an array containing zipcodes and coordinates, if it finds a match it displays the zipcode that matches the time. I also added in perameters so that if the time is longer than 5 digits, it searches for the last 5 digits in the zipcode. For example if the time is 12:34:21 the code will search for the zipcode 23421.</p>
+            <div className={styles.shorterDocumentation}>
+               
+                <p>This is a clock I created for my Networked Media class. I used zipcodes from both the US and Mexico along with census data from both countries to collect the zipcodes and their coordinates, After this, I used leaflet, a free map api, and some javascript to connect my zipcodes to my clock.</p>
 
-                {/* add improvements */}
-                {/* add github link */}
+                <p>The clock works by taking the time and searching through an array containing zipcodes and coordinates, if it finds a match it displays the zipcode that matches the time. I also added in perameters so that if the time is longer than 5 digits, it searches for the last 5 digits in the zipcode. For example if the time is 12:34:21 the code will search for the zipcode 23421.</p>
+
+                <h2>Links</h2>
+                <p><a href='https://zipcodeclock.harrydnewman.com/'>View the ZipCode Clock</a></p>
+                <p><a href='https://github.com/harrydnewman/ZipCode-Clock'>GitHub Repository</a></p>
             </div>
             
         </div>

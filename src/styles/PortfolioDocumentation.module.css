@@ -1,5 +1,8 @@
 .main {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title {
@@ -53,3 +56,47 @@
 }
 
 /* need to come back and finish with this */
+
+.singleImageContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.singleImageContainer img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.shorterDocumentation {
+    width: 60%;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.zipCodeClockiFrame {
+    width: 100%;
+}
+
+.iframeContainer {
+   background-color: green;
+   width: 60%;
+    height: 50vh;
+    
+    border: none;
+    border-radius: 15px;
+}
+
+.iframeContainer iframe {
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+    /* height: auto; */
+    transform: scale(0.5); /* Zoom out to 80% */
+    transform-origin: 0 0; /* Set origin to top-left */
+    width: 200%; /* Adjust width to compensate for scaling */
+    height: 200%; 
+    
+}
