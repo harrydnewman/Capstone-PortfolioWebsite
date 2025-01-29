@@ -21,3 +21,8 @@
 ### Update and add resume and about me to website
 
 ### Search and tags and stuff
+
+
+### Docker
+
+docker build --platform linux/amd64 -t harrydnewman/portfoliowebsite:latest --push .
