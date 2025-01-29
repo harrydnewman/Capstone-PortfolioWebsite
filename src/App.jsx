@@ -1,6 +1,8 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
 import Home from "./pages/Home";
 import Gallery from "./pages/Gallery";
+
+import RedirectBrainrot from "./pages/RedirectBrainrot";
 
 import Blog from "./pages/Blog";
 
@@ -33,6 +35,8 @@ function App() {
         <Route path="/portfolio" element={<Gallery />} />
 
         <Route path="/blog" element={<Blog />} />
+
+        <Route path="/brainrot" element={<RedirectBrainrot />} />
         {/* portfolio routes */}
         <Route path="/portfolio/brainrotarchive" element={<BrainrotArchive />} />
         <Route path="/portfolio/catalist" element={<Catalist/>}/> {/* html basically done, now just needs css */}

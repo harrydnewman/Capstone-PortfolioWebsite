@@ -5,15 +5,17 @@ import FutureStateJourneyMap from '../../assets/images/Catalist/futurestate.png'
 import FlowDiagram from '../../assets/images/Catalist/flowchart.png'
 import StyleGuide from '../../assets/images/Catalist/styleguide.png'
 import FigmaFlow from '../../assets/images/Catalist/figmaflow.png'
-
+import TitleSection from '../../components/TitleSection'
 export default function Catalist() {
     return (
         <div className={styles.main}>
-        <div className={styles.title}>
-        <h1>Catalist</h1>
-        <h2>Harrison Newman | April 30th, 2024 | UX Design</h2>
-        <h3>ADD THING WITH SKILLS HERE</h3>
-        </div>
+         <TitleSection 
+                        title="Catalist"
+                        name="Harrison Newman"
+                        date="April 30th, 2024"
+                        course="UX Design"
+                        skills={["Figma", "UX Design"]}
+                    />
         <div className={styles.bodySection}>
             <div className={styles.TableOfContents}>
                 <a href='#problemStatement'>Problem Statement</a>
