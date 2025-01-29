@@ -11,7 +11,8 @@ export default function Catalist() {
         <div className={styles.main}>
         <div className={styles.title}>
         <h1>Catalist</h1>
-        <h2>Info Here (also quick blurb about what it is)</h2>
+        <h2>Harrison Newman | April 30th, 2024 | UX Design</h2>
+        <h3>ADD THING WITH SKILLS HERE</h3>
         </div>
         <div className={styles.bodySection}>
             <div className={styles.TableOfContents}>
