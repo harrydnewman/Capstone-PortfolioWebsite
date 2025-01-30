@@ -1,98 +1,121 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap'); */
+
+h1 {
+  font-family: "Lexend", sans-serif;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: "Lexend", sans-serif;
+  font-weight: 500;
+}
+
+a {
+  font-family: "Zain", sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+}
+
+.body {
+  width: 100%;
+  background-color: rgb(11, 33, 22);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .main {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(11, 33, 22);
-    color: white;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: white;
 }
 
 .introduction {
-    display: flex;
-    /* background-color: aqua; */
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-
+  display: flex;
+  /* background-color: aqua; */
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .info {
-    width: 50%;
+  width: 50%;
 }
 
 .name {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .name h1 {
-    font-size: 90px;
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-top:0;
-    margin-bottom: 0px;
+  font-size: 90px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0px;
 }
 
 .imageAndLinks {
-    width: 50%;
+  width: 50%;
 }
 
-.pictureOfMe img{
-    width: 90%;
-    border-radius: 10px;
+.pictureOfMe img {
+  width: 90%;
+  border-radius: 10px;
 }
 .emailAndLinks {
-    margin-top: 1vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 10vh;
-    /* background-color: bisque; */
-    width: 90%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  /* background-color: bisque; */
+  width: 90%;
 }
 
 .email {
-    height: 100%;
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    /* align-items: ;    */
-    justify-content: space-between;
-    align-content: space-between;
-    padding: 12px;
-    padding-left: 2px !important;
-    font-weight: bold;
+  height: 100%;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: ;    */
+  justify-content: space-between;
+  align-content: space-between;
+  /* padding: 15px; */
+  padding-top: 6px;
+  padding-bottom: 9px;
+  padding-left: 2px !important;
+  font-weight: bold;
 }
 
 .email a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
-
-
-
 
 .links {
-    width: 30%;
-    
-    display: flex;
-    flex-direction: row;
-    /* background-color: aqua; */
-    align-items: center;
-    justify-content: flex-end;
-    height: 10vh;
+  width: 30%;
 
+  display: flex;
+  flex-direction: row;
+  /* background-color: aqua; */
+  align-items: center;
+  justify-content: flex-end;
+  height: 10vh;
 }
 
-
 .links img.githubImage {
-    height: 10vh !important;
-    margin-right: 7px;
-    /* background-color: purple !important; */
+  height: 10vh !important;
+  margin-right: 7px;
+  /* background-color: purple !important; */
 }
 
 .links img.linkedinimage {
-    height: 8vh !important;
-    /* background-color: purple !important; */
+  height: 8vh !important;
+  /* background-color: purple !important; */
 }
 /* 
 #linkedinimage {

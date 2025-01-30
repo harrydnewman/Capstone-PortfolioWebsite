@@ -8,12 +8,13 @@ import LinkedinImage from '../assets/images/Home/linkedin.webp'
 // https://www.sunnypatel.net/
 export default function Home() {
     return (
+        <div className={styles.body}>
         <div className={styles.main}>
             {/* <h1>This Website is currently under construction</h1> */}
             <div className={styles.introduction}>
                 <div className={styles.info}>
                     <div className={styles.name}>
-                        <h1>Harry</h1>
+                        <h1>Harrison</h1>
                         <h1>Newman</h1>
                     </div>
                     <div className={styles.blurb}>
@@ -93,6 +94,7 @@ export default function Home() {
 
             {/* <h1>Education and Work Experience</h1> */}
             {/* do it how that one guy had it for his portfolio where its like a timeline */}
+        </div>
         </div>
 
     )
