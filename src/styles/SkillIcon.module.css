@@ -1,0 +1,15 @@
+.skillIcon {
+        width: 10vw;
+        aspect-ratio: 1 / 1; /* Ensures height equals width */
+    /* background-color: green; */
+    /* border: 1px solid white; */
+}
+
+.skillIcon img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    /* height: auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

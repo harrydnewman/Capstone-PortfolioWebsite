@@ -3,6 +3,7 @@
 h1 {
   font-family: "Lexend", sans-serif;
   font-weight: 700;
+  color: white;
 }
 
 h2 {
@@ -22,6 +23,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 20px;
 }
 
 .main {
@@ -29,7 +31,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+    /* background-color: purple; */
   color: white;
 }
 
@@ -122,3 +124,40 @@ a {
     height: 500px !important;
     background-color: green !important;
 } */
+
+.skills h1, .educationandworkexperience h1 {
+    font-size: 60px;
+    margin-bottom: 0px;
+}
+/* 
+.educationandworkexperience h1 {
+    font-size: 60px;
+    margin-bottom: 0px;
+} */
+
+.skills h2 {
+    font-size: 50px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.skills {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    /* background-color: aqua; */
+    align-items: center;
+}
+
+.skillIconDiv {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.SkillIconRow {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
