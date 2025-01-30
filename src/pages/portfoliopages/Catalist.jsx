@@ -28,7 +28,7 @@ export default function Catalist() {
                 <a href='#flowDiagram'>Flow Diagram</a>
                 <a href='#styleguide'>Style Guide</a>
                 <a href='#featurelist'>Feature List</a>
-                <a href='#figmaprototype'>Figma Prototype</a>
+                {/* <a href='#figmaprototype'>Figma Prototype</a> */}
                 <a href='#testingEvidence'>Testing Evidence</a>
                 <a href='#analysis'>Analysis</a>
                 <a href='#nextsteps'>Next Steps</a>
@@ -70,15 +70,15 @@ export default function Catalist() {
                 <h4>Affinity Mapping</h4>
                 <p><strong>Key:</strong></p>
                 <ul>
-                    <li style={{ color: "green" }}>Green</li>
+                    <li style={{ color: "lightgreen" }}>Green</li>
                     <ul>
                         <li>Keels, 21, Man, NYU Stern Junior</li>
                     </ul>
-                    <li style={{ color: "orange" }}>Orange</li>
+                    <li style={{ color: "lightorange" }}>Orange</li>
                     <ul>
                         <li>Caitlyn, 22, Woman, NYU IMA Senior</li>
                     </ul>
-                    <li style={{ color: "blue" }}>Blue</li>
+                    <li style={{ color: "lightblue" }}>Blue</li>
                     <ul>
                         <li>Noelle, 19, Woman, NYU IMA Freshman</li>
                     </ul>
@@ -274,10 +274,10 @@ export default function Catalist() {
                         </ul>
                     </li>
                 </ol>
-                <h3 id='figmaprototype'>Figma Prototype of Key Interactions</h3>
+                {/* <h3 id='figmaprototype'>Figma Prototype of Key Interactions</h3> */}
                 {/* <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/c1WPisNIhE92yNcgKMAsV3/UX-Final?page-id=2%3A265&type=design&node-id=95-1207&viewport=-3437%2C-439%2C0.33&scaling=scale-down&starting-point-node-id=95%3A1207&embed-host=share" allowfullscreen></iframe> */}
 
-                <h1>ADD THESE LINKS LATER</h1>
+                {/* <h1>ADD THESE LINKS LATER</h1> */}
 
                 <h3 id='testingEvidence'>Testing Evidence:</h3>
                 {/* NEED TO COME BACK AND FIX THIS  */}

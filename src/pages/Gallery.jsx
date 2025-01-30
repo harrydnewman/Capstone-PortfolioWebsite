@@ -33,16 +33,7 @@ export default function Gallery() {
             altText: "chat technology image",
             skillids: ["React"],
         },
-        {
-            title: "Brainrot Archive",
-            date: "October 23rd, 2024",
-            link: "/portfolio/brainrotarchive",
-            liveLink: "https://brainrot.harrydnewman.com",
-            iframesrc: "",
-            image: BrainrotArchiveImage,
-            altText: "brainrot archive image",
-            skillids: ["React"],
-        },
+        
         {
             title: "Hell On Earth",
             date: "March 5th, 2023",
@@ -52,6 +43,16 @@ export default function Gallery() {
             image: HellOnEarthImage,
             altText: "hell on earth image",
             skillids: ["Unity", "C#"],
+        },
+        {
+            title: "Brainrot Archive",
+            date: "October 23rd, 2024",
+            link: "/portfolio/brainrotarchive",
+            liveLink: "https://brainrot.harrydnewman.com",
+            iframesrc: "",
+            image: BrainrotArchiveImage,
+            altText: "brainrot archive image",
+            skillids: ["React"],
         },
         {
             title: "Velociraptor",

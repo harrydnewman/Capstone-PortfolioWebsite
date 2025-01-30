@@ -16,6 +16,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 25px;
 }
 
 .Gallery {
@@ -24,13 +25,15 @@ h1 {
     box-sizing: border-box;
     column-count: 3; /* Number of columns for larger screens */
     column-gap: 0px;
-    margin-bottom: 50px;
+    padding-bottom: 500px;
+    margin-bottom: 500px;
+    /* background-color: purple; */
     
 }
 
 .portfolioItem {
     break-inside: avoid-column;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     box-sizing: border-box;
     margin-left: 20px;
     margin-right: 20px;

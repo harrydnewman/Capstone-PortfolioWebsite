@@ -44,9 +44,11 @@ export default function BrainrotArchive(){
             </ul>
 
             <h2>Links</h2>
-            <p><a href='https://brainrot.harrydnewman.com/'>Visit the Brainrot Archive</a></p>
+            <div className={styles.links}>
+            <a href='https://brainrot.harrydnewman.com/'>Visit the Brainrot Archive</a>
 
-            <p><a href='https://github.com/harrydnewman/Brainrot-Archive'>View the Github Repository</a></p>
+            <a href='https://github.com/harrydnewman/Brainrot-Archive'>View the Github Repository</a>
+            </div>
             </div>
         </div>
         

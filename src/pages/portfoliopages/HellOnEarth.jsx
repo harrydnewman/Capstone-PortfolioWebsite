@@ -1,5 +1,5 @@
 export default function HellOnEarth(){
     return (
-        <h1 style={{color: "black"}}>Hell on Earth</h1>
+        <h1>Hell on Earth</h1>
     )
 }

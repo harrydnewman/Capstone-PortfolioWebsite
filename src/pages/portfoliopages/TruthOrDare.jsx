@@ -30,7 +30,9 @@ export default function TruthOrDare() {
                 <p>Kimi and I were relatively happy with the outcome of this project. There were some positioning mistakes, as we shot some things out of order, but other than that we had few problems with our final cut. This was the first time either of us had attempted to do something like this, and we were happy with the final result.</p>
                 <p>We originally made this game playable in Unity but have since adapted it to be played on YouTube to improve accessibility.</p>
                 <h2>Links</h2>
-                <p><a href="https://www.youtube.com/watch?v=2bAYAhXFYeY">Watch on YouTube</a></p>
+                <div className={styles.links}>
+                <a href="https://www.youtube.com/watch?v=2bAYAhXFYeY">Watch on YouTube</a>
+                </div>
             </div>
         </div>
     )

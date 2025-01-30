@@ -37,8 +37,10 @@ export default function ChatTech() {
             <p>We ended up splitting the work pretty evenly, with Cate doing a lot of the styling and basic components, while Harry did more of the advanced CSS and JavaScript interactions. We decided against using Glitch, and opted to use VSCode and GitHub instead. We ended up finding it easier (and more fun) to work together on most of the site rather than do it on our own, so we mainly worked off of one computer. Although we didn't end up using Glitch, we still wanted our site to be on the web so we deployed it onto a digital ocean droplet so that it can be viewed publicly. The link for this can be viewed below.</p>
 
             <h2>Links</h2>
-            <p><a href="https://chattech.harrydnewman.com/">Visit the Site!</a></p>
-            <p><a href="https://github.com/harrydnewman/ChatTech/">View the GitHub Repository</a></p>
+            <div className={styles.links}>
+            <a href="https://chattech.harrydnewman.com/">Visit the Site!</a>
+            <a href="https://github.com/harrydnewman/ChatTech/">View the GitHub Repository</a>
+            </div>
             </div>
         </div>
     )
