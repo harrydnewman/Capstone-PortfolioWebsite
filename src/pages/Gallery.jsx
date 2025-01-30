@@ -11,9 +11,114 @@ import JimmyBuffettImage from '../assets/images/JimmyBuffett/preview.png'
 import ChatTechImage from '../assets/images/ChatTech/chathomepage.gif'
 import VelociraptorImage from '../assets/images/Velociraptor/preview.png'
 export default function Gallery() {
+    const portfolioItems = [
+        {
+            title: "ZipCode Clock",
+            date: "",
+            link: "/portfolio/zipcodeclock",
+            liveLink: "https://zipcodeclock.harrydnewman.com",
+            iframesrc: "https://zipcodeclock.harrydnewman.com",
+            image: "",
+            altText: "",
+            skillids: [],
+        },
+        {
+            title: "ChatTech",
+            date: "",
+            link: "/portfolio/chattech",
+            liveLink: "",
+            iframesrc: "",
+            image: ChatTechImage,
+            altText: "chat technology image",
+            skillids: [],
+        },
+        {
+            title: "Brainrot Archive",
+            date: "",
+            link: "/portfolio/brainrotarchive",
+            liveLink: "",
+            iframesrc: "",
+            image: BrainrotArchiveImage,
+            altText: "brainrot archive image",
+            skillids: [],
+        },
+        {
+            title: "Hell On Earth",
+            date: "",
+            link: "/portfolio/hellonearth",
+            liveLink: "",
+            iframesrc: "",
+            image: HellOnEarthImage,
+            altText: "hell on earth image",
+            skillids: [],
+        },
+        {
+            title: "Velociraptor",
+            date: "",
+            link: "/portfolio/velociraptor",
+            liveLink: "",
+            iframesrc: "",
+            image: VelociraptorImage,
+            altText: "Velociraptor Image",
+            skillids: [],
+        },
+        {
+            title: "Truth or Dare",
+            date: "",
+            link: "/portfolio/truthordare",
+            liveLink: "",
+            iframesrc: "",
+            image: TruthOrDareImage,
+            altText: "truth or dare image",
+            skillids: [],
+        },
+        {
+            title: "Cunty Roads",
+            date: "",
+            link: "/portfolio/cuntyroads",
+            liveLink: "",
+            iframesrc: "",
+            image: CuntyRoadsImage,
+            altText: "cunty roads image",
+            skillids: [],
+        },
+        {
+            title: "Catalist",
+            date: "",
+            link: "/portfolio/catalist",
+            liveLink: "",
+            iframesrc: "",
+            image: CatalistImage,
+            altText: "catalist image",
+            skillids: [],
+        },
+        {
+            title: "Crossword",
+            date: "",
+            link: "/portfolio/crossword",
+            liveLink: "",
+            iframesrc: "",
+            image: CrosswordImage,
+            altText: "crossword image",
+            skillids: [],
+        },
+        {
+            title: "An Ode To Jimmy Buffett",
+            date: "",
+            link: "/portfolio/jimmybuffett",
+            liveLink: "",
+            iframesrc: "",
+            image: JimmyBuffettImage,
+            altText: "an ode to jimmy buffett image",
+            skillids: [],
+        },
+    ];    
     return (
-        <div>
-            <h1>Gallery</h1>
+        <div className={styles.main}>
+            {/* <h1>Gallery</h1> */}
+            <div className={styles.portfolioHeader}>
+                <h1>Portfolio</h1>
+            </div>
 
             <div className={styles.Gallery}>
                 <div className={styles.portfolioItem}>
