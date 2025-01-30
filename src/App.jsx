@@ -8,6 +8,8 @@ import Blog from "./pages/Blog";
 
 import Resume from "./pages/Resume";
 
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 // portfolio pages
 
 import BrainrotArchive from "./pages/portfoliopages/BrainrotArchive";
@@ -32,6 +34,7 @@ function App() {
   return (
     <div className="App">
     <Router>
+    <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/portfolio" element={<Gallery />} />
@@ -61,6 +64,7 @@ function App() {
         <Route path="/portfolio/velociraptor" element={<Velociraptor />} />
         <Route path="/portfolio/zipcodeclock" element={<Zipcodeclock />} />
       </Routes>
+      <Footer />
     </Router>
     </div>
   )
