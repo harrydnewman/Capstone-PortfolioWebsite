@@ -7,6 +7,7 @@ import CuntyRoadsImage from '../assets/images/CuntyRoads/preview.gif'
 import CrosswordImage from '../assets/images/Crossword/preview.png'
 import BrainrotArchiveImage from '../assets/images/BrainrotArchive/brainrot.gif'
 import TruthOrDareImage from '../assets/images/TruthorDare/preview.png'
+import JimmyBuffettImage from '../assets/images/JimmyBuffett/preview.png'
 
 import VelociraptorImage from '../assets/images/Velociraptor/preview.png'
 export default function Gallery() {
@@ -73,6 +74,16 @@ export default function Gallery() {
                     </a>
                     <div className={styles.projectName}>
                         <h2>Cunty Roads</h2>
+                    </div>
+                </div>
+                <div className={styles.portfolioItem}>
+                    <a href='/portfolio/jimmybuffett'>
+                        <div className={styles.imageContainer}>
+                            <img src={JimmyBuffettImage} alt='an ode to jimmybuffett image' />
+                        </div>
+                    </a>
+                    <div className={styles.projectName}>
+                        <h2>An Ode To Jimmy Buffett</h2>
                     </div>
                 </div>
                 <div className={styles.portfolioItem}>

@@ -1,14 +1,14 @@
 import TitleSection from "../../components/TitleSection"
 import styles from '../../styles/PortfolioDocumentation.module.css'
 
-export default function ChatTech() {
+export default function GermanDepartment() {
     return (
         <div>
             <TitleSection
-                title="ChatTech"
-                name="Harrison Newman & Cate Hackett"
-                date="December 11th, 2024"
-                course="Augmenting The Gallery"
+                title="NYU German Department Website Redesign"
+                name="Harrison Newman"
+                date="March 5th, 2024"
+                course="Networked Media"
                 skills={["React"]}
             />
         </div>

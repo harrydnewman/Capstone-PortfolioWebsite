@@ -13,8 +13,8 @@ export default function JimmyBuffett() {
             <TitleSection
                 title="An Ode To Jimmy Buffett"
                 name="Harrison Newman & Keels Braga"
-                date="May 8th, 2023"
-                course="Communications Lab"
+                date="April 29th, 2024"
+                course="Networked Media"
                 skills={["EJS", "JavaScript"]}
             />
             <div className={styles.shorterDocumentation}>

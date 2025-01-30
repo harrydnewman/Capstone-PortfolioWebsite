@@ -25,7 +25,7 @@ import Taskr from "./pages/portfoliopages/Taskr";
 import TruthOrDare from "./pages/portfoliopages/TruthOrDare";
 import Velociraptor from "./pages/portfoliopages/Velociraptor";
 import Zipcodeclock from "./pages/portfoliopages/ZipCodeClock";
-
+import GermanDepartment from "./pages/portfoliopages/GermanDepartment";
 function App() {
   return (
     <div className="App">
@@ -43,6 +43,7 @@ function App() {
         <Route path="/portfolio/chattech" element={<ChatTech />} />
         <Route path="/portfolio/crossword" element={<Crossword />} />
         <Route path="/portfolio/cuntyroads" element={<CuntyRoads />} />
+        <Route path="/portfolio/germandepartment" element={<GermanDepartment />} />
         <Route path="/portfolio/germanpopulation" element={<GermanPopulation />} />
         <Route path="/portfolio/hellonearth" element={<HellOnEarth />} />
         <Route path="/portfolio/iefinal" element={<IEFinal />} />
