@@ -1,4 +1,5 @@
 import styles from '../styles/PortfolioGallery.module.css'
+import PortfolioCard from '../components/PortfolioCard'
 
 // image imports 
 import HellOnEarthImage from '../assets/images/HellOnEarth/preview.png'
@@ -14,13 +15,13 @@ export default function Gallery() {
     const portfolioItems = [
         {
             title: "ZipCode Clock",
-            date: "",
+            date: "February 23rd, 2024",
             link: "/portfolio/zipcodeclock",
             liveLink: "https://zipcodeclock.harrydnewman.com",
             iframesrc: "https://zipcodeclock.harrydnewman.com",
             image: "",
             altText: "",
-            skillids: [],
+            skillids: ["JavaScript"],
         },
         {
             title: "ChatTech",
@@ -120,11 +121,11 @@ export default function Gallery() {
                 <h1>Portfolio</h1>
             </div>
 
-            <div className={styles.Gallery}>
+            {/* <div className={styles.Gallery}>
                 <div className={styles.portfolioItem}>
                     <a href='/portfolio/zipcodeclock'>
                         <div className={styles.iframeContainer}>
-                            <iframe src="https://zipcodeclock.harrydnewman.com" title="ZipCode Clock iFrame"></iframe>
+                            <iframe src="https://zipcodeclock.harrydnewman.com"></iframe>
                         </div>
                     </a>
                     <div className={styles.projectName}>
@@ -229,6 +230,12 @@ export default function Gallery() {
                
                 
 
+            </div> */}
+
+            <div className={styles.Gallery}>
+            {portfolioItems.map((item, index) => (
+                        <PortfolioCard key={index} portfolioItem={item} />
+                    ))}
             </div>
 
             {/* items:
