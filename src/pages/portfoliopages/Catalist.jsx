@@ -1,4 +1,4 @@
-import styles from '../../styles/PortfolioDocumentation.module.css'
+import styles from '../../styles/PortfolioDocumentation.module.css' 
 import PersonaImage from '../../assets/images/Catalist/persona.jpg'
 import CurrentStateJourneyMap from '../../assets/images/Catalist/currentstatejourney.png'
 import FutureStateJourneyMap from '../../assets/images/Catalist/futurestate.png'

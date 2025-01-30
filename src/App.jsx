@@ -18,7 +18,7 @@ import HellOnEarth from "./pages/portfoliopages/HellOnEarth";
 import IEFinal from "./pages/portfoliopages/IEFinal";
 import IEMidterm from "./pages/portfoliopages/IEMidterm";
 import InventoryManagement from "./pages/portfoliopages/InventoryManagement";
-import JimmyBuffet from "./pages/portfoliopages/JimmyBuffet";
+import JimmyBuffett from "./pages/portfoliopages/JimmyBuffett";
 import MastodonBot from "./pages/portfoliopages/MastodonBot";
 import SubwaySafety from "./pages/portfoliopages/SubwaySafety";
 import Taskr from "./pages/portfoliopages/Taskr";
@@ -48,7 +48,7 @@ function App() {
         <Route path="/portfolio/iefinal" element={<IEFinal />} />
         <Route path="/portfolio/iemidterm" element={<IEMidterm />} />
         <Route path="/portfolio/inventorymanagement" element={<InventoryManagement />} />
-        <Route path="/portfolio/jimmybuffet" element={<JimmyBuffet />} />
+        <Route path="/portfolio/jimmybuffett" element={<JimmyBuffett />} />
         <Route path="/portfolio/mastodonbot" element={<MastodonBot />} />
         <Route path="/portfolio/subwaysafety" element={<SubwaySafety />} />
         <Route path="/portfolio/taskr" element={<Taskr />} />

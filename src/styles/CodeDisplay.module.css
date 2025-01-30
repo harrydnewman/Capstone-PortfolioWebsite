@@ -1,0 +1,54 @@
+.topBar {
+    /* height: 50px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  /* Ensures space between elements */
+    align-items: center;  /* Vertically centers items */
+    background-color: gray;
+    padding: 0;
+    margin: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.topBar p {
+    padding: 0;
+    margin: 0;
+    color: white;
+    margin-left: 8px;
+}
+
+.copyButton {
+    /* margin-right: 8px; */
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: flex-end; /* This line can be omitted, as it's redundant */
+    height: 50%;
+    background-color: darkgray;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.copyButton p {
+    margin-left: 0px;
+    color: black;
+}
+
+.copyButton img {
+    max-height: 20px;
+    padding-left: 5px;
+}
+
+.syntaxHighlighter {
+    padding-top: 0;
+    margin-top: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.copyButton:hover {
+    background-color: darkgray;
+    cursor: pointer;
+}
