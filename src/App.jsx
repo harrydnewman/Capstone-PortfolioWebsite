@@ -6,6 +6,8 @@ import RedirectBrainrot from "./pages/RedirectBrainrot";
 
 import Blog from "./pages/Blog";
 
+import Resume from "./pages/Resume";
+
 // portfolio pages
 
 import BrainrotArchive from "./pages/portfoliopages/BrainrotArchive";
@@ -37,6 +39,8 @@ function App() {
         <Route path="/blog" element={<Blog />} />
 
         <Route path="/brainrot" element={<RedirectBrainrot />} />
+
+        <Route path="/resume" element={<Resume />}/>
         {/* portfolio routes */}
         <Route path="/portfolio/brainrotarchive" element={<BrainrotArchive />} />
         <Route path="/portfolio/catalist" element={<Catalist/>}/> {/* html basically done, now just needs css */}
