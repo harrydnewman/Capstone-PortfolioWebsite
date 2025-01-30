@@ -10,6 +10,7 @@ import Resume from "./pages/Resume";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+
 // portfolio pages
 
 import BrainrotArchive from "./pages/portfoliopages/BrainrotArchive";
@@ -30,9 +31,14 @@ import TruthOrDare from "./pages/portfoliopages/TruthOrDare";
 import Velociraptor from "./pages/portfoliopages/Velociraptor";
 import Zipcodeclock from "./pages/portfoliopages/ZipCodeClock";
 import GermanDepartment from "./pages/portfoliopages/GermanDepartment";
+
+import Login from "./pages/BlogPages/Login";
+import { AuthProvider } from "./AuthContext";
+import Dashboard from "./pages/BlogPages/Dashboard";
 function App() {
   return (
     <div className="App">
+    <AuthProvider>
     <Router>
     <Header />
       <Routes>
@@ -63,9 +69,13 @@ function App() {
         <Route path="/portfolio/truthordare" element={<TruthOrDare />} />
         <Route path="/portfolio/velociraptor" element={<Velociraptor />} />
         <Route path="/portfolio/zipcodeclock" element={<Zipcodeclock />} />
+
+        <Route path="/login" element={<Login/>}/>
+        <Route path="/blog/dashboard" element={<Dashboard/>}/>
       </Routes>
       <Footer />
     </Router>
+    </AuthProvider>
     </div>
   )
 }
