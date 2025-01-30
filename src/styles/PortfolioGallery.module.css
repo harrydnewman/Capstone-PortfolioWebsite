@@ -23,8 +23,8 @@ h1 {
     margin-right: 20px;
     box-sizing: border-box;
     column-count: 3; /* Number of columns for larger screens */
-    column-gap: 10px;
-    margin-bottom: 40px;
+    column-gap: 0px;
+    margin-bottom: 50px;
     
 }
 
