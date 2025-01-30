@@ -9,6 +9,7 @@ import LinkedinImage from '../assets/images/Home/linkedin.webp'
 export default function Home() {
     return (
         <div className={styles.main}>
+            {/* <h1>This Website is currently under construction</h1> */}
             <div className={styles.introduction}>
                 <div className={styles.info}>
                     <div className={styles.name}>
@@ -16,7 +17,8 @@ export default function Home() {
                         <h1>Newman</h1>
                     </div>
                     <div className={styles.blurb}>
-                        <h2>NYU Interactive Media Arts Senior</h2>
+                        <h2>New York University</h2>
+                        <h2>Interactive Media Arts Senior</h2>
                     </div>
                 </div>
                 <div className={styles.imageAndLinks}>
@@ -24,38 +26,44 @@ export default function Home() {
                         <img src={PictureOfMe} alt='picture of me' />
                     </div>
                     <div className={styles.emailAndLinks}>
-                    <div className={styles.email}>
-                    <a href='mailto:harrydnewman@gmail.com'>harrydnewman@gmail.com</a>
-                    <a href='/resume'>Resume</a>
+                        <div className={styles.email}>
+                            <a href='mailto:harrydnewman@gmail.com'>harrydnewman@gmail.com</a>
+                            <a href='/resume'>Resume</a>
+                        </div>
+                        <div className={styles.links}>
+                            <a href='https://github.com/harrydnewman/' target="_blank"><img className={styles.githubImage} src={GitHubImage} alt='github link' /></a>
+                            <a href='https://www.linkedin.com/in/harrisondnewman/' target="_blank"><img className={styles.linkedinimage} src={LinkedinImage} alt='linkedin link' /></a>
+                        </div>
                     </div>
-                    <div className={styles.links}>
-                        <a href='https://github.com/harrydnewman/' target="_blank"><img className={styles.githubImage} src={GitHubImage} alt='github link'/></a>
-                        <a href='https://www.linkedin.com/in/harrisondnewman/' target="_blank"><img className={styles.linkedinimage} src={LinkedinImage} alt='linkedin link'/></a>
-                    </div>
-                       
-                    </div>
-                    {/* add links and email here */}
                 </div>
             </div>
 
-            <h1>NEED SOME SORT OF INTRODUCTION</h1>
+            {/* once u scroll past this, then show the top bar IMO */}
+            <div className={styles.featuredProjects}>
+                <h1>Featured Projects</h1>
+                {/* do like 3 featured projects here, then a link to the rest of my portfolio */}
+                {/* catalist/taskr */}
+                {/* brainrot archive */}
+                {/* chattech/cunty roads */}
+                {/* add cute link to more projects */}
 
-            {/* https://jonhecky.dev/ I like how he does his introduction and I like his links and stuff */}
-            {/* <h1>Links</h1>
-            <ul>
-                <li>github</li>
-                <li>linkedin</li>
-                <li>instagram</li>
-            </ul>
+            </div>
+            <div className={styles.skills}>
+                <h1>Skills</h1>
+            </div>
+            <div className={styles.educationandworkexperience}>
+                <h1>Education and Work Experience</h1>
+            </div>
 
-            <h1>Featured Projects</h1> */}
 
-            {/* do like 3 featured projects here, then a link to the rest of my portfolio */}
-            {/* catalist/taskr */}
-            {/* brainrot archive */}
-            {/* chattech/cunty roads */}
 
-            {/* <h1>Skills</h1>
+
+
+
+
+
+            {/* 
+            <h1>Skills</h1>
             <h2>Programming Languages</h2>
             <ul>
                 <li>JavaScript</li>
