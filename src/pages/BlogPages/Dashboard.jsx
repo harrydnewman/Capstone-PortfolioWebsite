@@ -40,6 +40,20 @@ const Dashboard = () => {
     }
   };
 
+  // Edit an existing post in MongoDB
+  const editPost = async (id, updatedPost) => {
+    if (!user) {
+      alert("You must be logged in to edit a post.");
+      return;
+    }
+    try {
+      const res = await axios.put(`${API_URL}/${id}`, updatedPost);
+      setPosts(posts.map((post) => (post._id === id ? res.data : post)));
+    } catch (error) {
+      console.error("Error updating post:", error);
+    }
+  };
+
   // Delete a post from MongoDB (Only if logged in)
   const deletePost = async (id) => {
     if (!user) {
@@ -58,7 +72,7 @@ const Dashboard = () => {
     <div>
       <h2>Blog</h2>
       {user && <PostForm addPost={addPost} />}
-      <PostList posts={posts} onDelete={user ? deletePost : null} user={user} />
+      <PostList posts={posts} onDelete={user ? deletePost : null} onEdit={user ? editPost : null} user={user} />
     </div>
   );
 };

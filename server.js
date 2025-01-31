@@ -60,6 +60,32 @@ app.delete("/api/posts/:id", async (req, res) => {
   }
 });
 
+// Update a post
+app.put("/api/posts/:id", async (req, res) => {
+  try {
+    const { title, content } = req.body;
+    if (!title || !content) {
+      return res.status(400).json({ error: "Title and content required" });
+    }
+
+    const updatedPost = await Post.findByIdAndUpdate(
+      req.params.id,
+      { title, content },
+      { new: true }
+    );
+
+    if (!updatedPost) {
+      return res.status(404).json({ error: "Post not found" });
+    }
+
+    res.json(updatedPost);
+  } catch (error) {
+    console.error("Error updating post:", error);
+    res.status(500).json({ error: "Server error" });
+  }
+});
+
+
 // Start the server
 const PORT = process.env.PORT || 3001; 
 app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
