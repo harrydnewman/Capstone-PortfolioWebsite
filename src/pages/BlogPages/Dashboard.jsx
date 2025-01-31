@@ -1,9 +1,11 @@
-// src/pages/Dashboard.jsx
 import { useEffect, useState } from "react";
+import axios from "axios";
 import PostList from "../../components/PostList";
 import PostForm from "../../components/PostForm";
 import { useAuth } from "../../AuthContext";
 import { useNavigate } from "react-router-dom";
+
+const API_URL = "http://localhost:3001/api/posts"; // Adjust based on your server
 
 const Dashboard = () => {
   const { user } = useAuth();
@@ -11,28 +13,52 @@ const Dashboard = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    if (!user) navigate("/login");
-    const storedPosts = JSON.parse(localStorage.getItem("posts")) || [];
-    setPosts(storedPosts);
-  }, [user, navigate]);
+    fetchPosts();
+  }, []);
 
-  const addPost = (post) => {
-    const updatedPosts = [...posts, post];
-    setPosts(updatedPosts);
-    localStorage.setItem("posts", JSON.stringify(updatedPosts));
+  // Fetch posts from MongoDB (Public)
+  const fetchPosts = async () => {
+    try {
+      const res = await axios.get(API_URL);
+      setPosts(res.data);
+    } catch (error) {
+      console.error("Error fetching posts:", error);
+    }
   };
 
-  const deletePost = (id) => {
-    const updatedPosts = posts.filter(post => post.id !== id);
-    setPosts(updatedPosts);
-    localStorage.setItem("posts", JSON.stringify(updatedPosts));
+  // Add a new post to MongoDB (Only if logged in)
+  const addPost = async (post) => {
+    if (!user) {
+      alert("You must be logged in to create a post.");
+      return;
+    }
+    try {
+      const res = await axios.post(API_URL, post);
+      setPosts([res.data, ...posts]); // Add new post at the beginning
+    } catch (error) {
+      console.error("Error adding post:", error);
+    }
+  };
+
+  // Delete a post from MongoDB (Only if logged in)
+  const deletePost = async (id) => {
+    if (!user) {
+      alert("You must be logged in to delete a post.");
+      return;
+    }
+    try {
+      await axios.delete(`${API_URL}/${id}`);
+      setPosts(posts.filter((post) => post._id !== id)); // Remove from UI
+    } catch (error) {
+      console.error("Error deleting post:", error);
+    }
   };
 
   return (
     <div>
-      <h2>Dashboard</h2>
-      <PostForm addPost={addPost} />
-      <PostList posts={posts} onDelete={deletePost} />
+      <h2>Blog</h2>
+      {user && <PostForm addPost={addPost} />}
+      <PostList posts={posts} onDelete={user ? deletePost : null} user={user} />
     </div>
   );
 };
