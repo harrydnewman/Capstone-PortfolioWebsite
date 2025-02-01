@@ -4,7 +4,7 @@ import FeaturedWebpage from "../../components/FeaturedWebpage"
 import AccountPageImage from '../../assets/images/JimmyBuffett/accountpage.png'
 import RecipePageImage from '../../assets/images/JimmyBuffett/recipepage.png'
 import MargaritavillePageImage from '../../assets/images/JimmyBuffett/margaritavillepage.png'
-
+import JimmyBuffettImage from '../../assets/images/JimmyBuffett/preview.png'
 import SitemapImage from '../../assets/images/JimmyBuffett/sitemap.png'
 
 export default function JimmyBuffett() {
@@ -18,7 +18,8 @@ export default function JimmyBuffett() {
                 skills={["EJS", "JavaScript"]}
             />
             <div className={styles.shorterDocumentation}>
-            <h1>NEED IMAGE HERE</h1>
+            {/* <h1>NEED IMAGE HERE</h1> */}
+            <img src={JimmyBuffettImage} alt="homepage image"/>
                 <h2>Our Idea</h2>
                 <p>For our Networked Media final project, my classmate, Keels Braga, and I decided to make a website dedicated to the late Jimmy Buffett</p>
                 <p>We combined our appreciation for classic Americana and the laid-back lifestyle Buffett often sang about with our technical skills to build a comprehensive website that showcases the many aspects of his life.</p>
