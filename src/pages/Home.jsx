@@ -5,6 +5,10 @@ import LinkedinImage from '../assets/images/Home/linkedin.webp'
 import SkillIcon from '../components/SkillIcon'
 import TimeLine from '../components/TimeLine'
 
+import CatalistImage from '../assets/images/Catalist/preview.png'
+import BrainrotArchiveImage from '../assets/images/BrainrotArchive/brainrot.gif'
+import CuntyRoadsImage from '../assets/images/CuntyRoads/preview.gif'
+
 import JavaScriptImage from '../assets/images/Home/javascript.png'
 import ReactImage from '../assets/images/Home/react.webp'
 import PythonImage from '../assets/images/Home/python.png'
@@ -76,7 +80,7 @@ export default function Home() {
                         <div className={styles.emailAndLinks}>
                             <div className={styles.email}>
                                 <a href='mailto:harrydnewman@gmail.com'>harrydnewman@gmail.com</a>
-                                <a href='/resume'>Resume</a>
+                                <a href='/'>Resume</a>
                             </div>
                             <div className={styles.links}>
                                 <a href='https://github.com/harrydnewman/' target="_blank"><img className={styles.githubImage} src={GitHubImage} alt='github link' /></a>
@@ -94,6 +98,28 @@ export default function Home() {
                 {/* brainrot archive */}
                 {/* chattech/cunty roads */}
                 {/* add cute link to more projects */}
+
+                <div className={styles.featuredProjects}>
+                    <h1>Projects</h1>
+                    {/* <div className={styles.featuredProjectsDiv}>
+                        <div className={styles.featuredProjectDiv}>
+                            <img className={styles.horizontalImage} src={CuntyRoadsImage} alt='cunty roads animal dancing'/>
+                            <h3>Cunty Roads</h3>
+                        </div>
+                        <div className={styles.catalistFeaturedProjectDiv}>
+                            <img className={styles.verticalImage} src={CatalistImage} alt='Catalist Image'/>
+                            <h3>Catalist</h3>
+                        </div>
+                        <div className={styles.featuredProjectDiv}>
+                            <img className={styles.horizontalImage} src={BrainrotArchiveImage} alt='brainrot archive home page'/>
+                            <h3>Brainrot Archive</h3>
+                        </div>
+                        
+                    </div>  */}
+                    <div className={styles.LinkToRestOfPortfolioDiv}>
+                        <a href='/portfolio'><h2>View Portfolio --&gt;</h2></a>
+                    </div>
+                </div>
 
                 {/* </div> */}
                 <div className={styles.skills}>

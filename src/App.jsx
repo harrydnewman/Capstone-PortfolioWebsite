@@ -49,7 +49,7 @@ function App() {
 
         <Route path="/brainrot" element={<RedirectBrainrot />} />
 
-        <Route path="/resume" element={<Resume />}/>
+        {/* <Route path="/resume" element={<Resume />}/> */}
         {/* portfolio routes */}
         <Route path="/portfolio/brainrotarchive" element={<BrainrotArchive />} />
         <Route path="/portfolio/catalist" element={<Catalist/>}/> {/* html basically done, now just needs css */}

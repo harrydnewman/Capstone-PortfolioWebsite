@@ -54,16 +54,16 @@ export default function Gallery() {
             altText: "brainrot archive image",
             skillids: ["React"],
         },
-        {
-            title: "Velociraptor",
-            date: "May 7th, 2024",
-            link: "/portfolio/velociraptor",
-            liveLink: "",
-            iframesrc: "",
-            image: VelociraptorImage,
-            altText: "Velociraptor Image",
-            skillids: ["CNC", "Digital Fabrication"],
-        },
+        // {
+        //     title: "Velociraptor",
+        //     date: "May 7th, 2024",
+        //     link: "/portfolio/velociraptor",
+        //     liveLink: "",
+        //     iframesrc: "",
+        //     image: VelociraptorImage,
+        //     altText: "Velociraptor Image",
+        //     skillids: ["CNC", "Digital Fabrication"],
+        // },
         {
             title: "Truth or Dare",
             date: "May 8th, 2023",
@@ -94,16 +94,16 @@ export default function Gallery() {
             altText: "catalist image",
             skillids: ["Figma", "UX Design"],
         },
-        {
-            title: "Crossword",
-            date: "",
-            link: "/portfolio/crossword",
-            liveLink: "",
-            iframesrc: "",
-            image: CrosswordImage,
-            altText: "crossword image",
-            skillids: ["CNC", "Digital Fabrication"],
-        },
+        // {
+        //     title: "Crossword",
+        //     date: "",
+        //     link: "/portfolio/crossword",
+        //     liveLink: "",
+        //     iframesrc: "",
+        //     image: CrosswordImage,
+        //     altText: "crossword image",
+        //     skillids: ["CNC", "Digital Fabrication"],
+        // },
         {
             title: "An Ode To Jimmy Buffett",
             date: "",
@@ -122,122 +122,14 @@ export default function Gallery() {
                 <h1>Portfolio</h1>
             </div>
 
-            {/* <div className={styles.Gallery}>
-                <div className={styles.portfolioItem}>
-                    <a href='/portfolio/zipcodeclock'>
-                        <div className={styles.iframeContainer}>
-                            <iframe src="https://zipcodeclock.harrydnewman.com"></iframe>
-                        </div>
-                    </a>
-                    <div className={styles.projectName}>
-                        <h2>ZipCode Clock</h2>
-                    </div>
-                </div>
-                
-                
-                <div className={styles.portfolioItem}>
-                    <a href='/portfolio/chattech'>
-                        <div className={styles.imageContainer}>
-                            <img src={ChatTechImage} alt='chat technology image' />
-                        </div>
-                    </a>
-                    <div className={styles.projectName}>
-                    <h2>ChatTech</h2>
-                    </div>
-                </div>
-                <div className={styles.portfolioItem}>
-                    <a href='/portfolio/brainrotarchive'>
-                        <div className={styles.imageContainer}>
-                            <img src={BrainrotArchiveImage} alt='brainrotarchive image' />
-                        </div>
-                    </a>
-                    <div className={styles.projectName}>
-                        <h2>Brainrot Archive</h2>
-                    </div>
-                </div>
-                <div className={styles.portfolioItem}>
-                    <a href='/portfolio/hellonearth'>
-                        <div className={styles.imageContainer}>
-                            <img src={HellOnEarthImage} alt='hell on earth image' />
-                        </div>
-                    </a>
-                    <div className={styles.projectName}>
-                        <h2>Hell On Earth</h2>
-                    </div>
-                </div>
-                
-                <div className={styles.portfolioItem}>
-                    <a href='/portfolio/velociraptor'>
-                        <div className={styles.imageContainer}>
-                            <img src={VelociraptorImage} alt='Velociraptor Image' />
-                        </div>
-                    </a>
-                    <div className={styles.projectName}>
-                        <h2>Velociraptor</h2>
-                    </div>
-                </div>
-                <div className={styles.portfolioItem}>
-                    <a href='/portfolio/truthordare'>
-                        <div className={styles.imageContainer}>
-                            <img src={TruthOrDareImage} alt='truthordare Image' />
-                        </div>
-                    </a>
-                    <div className={styles.projectName}>
-                        <h2>Truth or Dare</h2>
-                    </div>
-                </div>
-                
-                <div className={styles.portfolioItem}>
-                    <a href='/portfolio/cuntyroads'>
-                        <div className={styles.imageContainer}>
-                            <img src={CuntyRoadsImage} alt='cunty roads image' />
-                        </div>
-                    </a>
-                    <div className={styles.projectName}>
-                        <h2>Cunty Roads</h2>
-                    </div>
-                </div>
-               
-                <div className={styles.portfolioItem}>
-                    <a href='/portfolio/catalist'>
-                        <div className={styles.imageContainer}>
-                            <img src={CatalistImage} alt='catalist image' />
-                        </div>
-                    </a>
-                    <div className={styles.projectName}>
-                        <h2>Catalist</h2>
-                    </div>
-                </div>
-                <div className={styles.portfolioItem}>
-                    <a href='/portfolio/crossword'>
-                        <div className={styles.imageContainer}>
-                            <img src={CrosswordImage} alt='cunty roads image' />
-                        </div>
-                    </a>
-                    <div className={styles.projectName}>
-                        <h2>Crossword</h2>
-                    </div>
-                </div>
-                <div className={styles.portfolioItem}>
-                    <a href='/portfolio/jimmybuffett'>
-                        <div className={styles.imageContainer}>
-                            <img src={JimmyBuffettImage} alt='an ode to jimmybuffett image' />
-                        </div>
-                    </a>
-                    <div className={styles.projectName}>
-                        <h2>An Ode To Jimmy Buffett</h2>
-                    </div>
-                </div>
-               
-                
-
-            </div> */}
+ 
 
             <div className={styles.Gallery}>
             {portfolioItems.map((item, index) => (
                         <PortfolioCard key={index} portfolioItem={item} />
                     ))}
             </div>
+            <p className={styles.note}><i>This is a new site, portfolio items are still being added!</i></p>
 
             {/* items:
                 - zipcode clock (code)

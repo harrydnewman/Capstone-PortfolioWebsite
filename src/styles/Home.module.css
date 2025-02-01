@@ -161,3 +161,61 @@ a {
     justify-content: center;
     margin-bottom: 30px;
 }
+.featuredProjects {
+  width: 100%;
+}
+
+.featuredProjects h1 {
+  text-align: center;
+}
+
+.featuredProjects h2 {
+  font-size: 60px;
+  text-align: center;
+}
+
+.featuredProjectsDiv {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+.featuredProjectDiv, .catalistFeaturedProjectDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.featuredProjectDiv {
+  width: 40%;
+  background-color: greenyellow;
+}
+
+.catalistFeaturedProjectDiv {
+  width: 20%;
+  background-color: pink;
+}
+
+.verticalImage {
+  max-height: 60%;
+  width: auto;
+  object-fit: contain;
+  padding: 5px;
+}
+
+.horizontalImage {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  padding: 5px;
+}
+
+.LinkToRestOfPortfolioDiv {
+  background-color: rgb(72, 148, 123);
+  /* width: 100% !important; */
+  width: 100%;
+  border-radius: 20px;
+}
+
+.LinkToRestOfPortfolioDiv:hover {
+ cursor: pointer;
+}

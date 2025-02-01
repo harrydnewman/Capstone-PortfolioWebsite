@@ -25,8 +25,8 @@ h1 {
     box-sizing: border-box;
     column-count: 3; /* Number of columns for larger screens */
     column-gap: 0px;
-    padding-bottom: 500px;
-    margin-bottom: 500px;
+    /* padding-bottom: 500px; */
+    margin-bottom: 50px;
     /* background-color: purple; */
     
 }
@@ -85,4 +85,8 @@ h1 {
     cursor: pointer;
     transform: scale(1.03); /* Hover effect applied here */
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow to emphasize hover */
+}
+
+.note {
+    padding-left: 40px;
 }
