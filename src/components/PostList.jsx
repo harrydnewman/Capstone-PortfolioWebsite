@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from '../styles/Blog.module.css'
 
 const PostList = ({ posts, onDelete, onEdit, user }) => {
   const [editingPostId, setEditingPostId] = useState(null);
@@ -39,8 +40,8 @@ const PostList = ({ posts, onDelete, onEdit, user }) => {
             </div>
           ) : (
             // View Mode
-            <div>
-              <h3>{post.title}</h3>
+            <div className={styles.individualPost}>
+              <h2>{post.title}</h2>
               <p>{post.content}</p>
               {user && (
                 <>

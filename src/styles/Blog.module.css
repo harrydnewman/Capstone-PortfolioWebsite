@@ -1,0 +1,12 @@
+.blogPage {
+    min-height: 100vh;
+}
+
+.blogPage h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.individualPost {
+    background-color: aqua;
+}
