@@ -2,6 +2,9 @@
 
 ## To Do
 
+- Optimize for Mobile and smaller screens
+
+
 ### Add Portfolio Pages for Following Items:
 
 - Collect all my projects I have that I like!!
