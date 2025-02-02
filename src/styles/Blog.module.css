@@ -32,9 +32,16 @@
 .individualPost h2 {
     padding: 0;
     margin: 0;
+    margin-bottom: 10px !important;
     font-size: 40px;
     /* border: white 10px solid; */
     
+}
+
+.postDate {
+    margin-top: 20px;
+    font-style: italic;
+    /* margin-bottom: 20px; */
 }
 
 .PostForm {
@@ -78,9 +85,9 @@
     word-wrap: break-word;
   }
 
-.postContent br {
+.postContent p {
     display: block;
-    height: 0 !important;
+    /* height: 0 !important; */
     margin: 0 !important;
     padding: 0 !important;
   }
