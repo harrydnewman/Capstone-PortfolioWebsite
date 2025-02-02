@@ -5,7 +5,7 @@ import PostForm from "../../components/PostForm";
 import { useAuth } from "../../AuthContext";
 import { useNavigate } from "react-router-dom";
 
-const API_URL = "http://localhost:3001/api/posts"; // Adjust based on your server
+const API_URL = "https://blog.harrydnewman.com/api/posts"; // Adjust based on your server
 
 const Dashboard = () => {
   const { user } = useAuth();

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import PostList from "../components/PostList";
 import styles from '../styles/Blog.module.css'
 import axios from "axios";
-const API_URL = "http://localhost:3001/api/posts";
+const API_URL = "https://blog.harrydnewman.com/api/posts";
 export default function Blog(){
     const [posts, setPosts] = useState([]);
 
