@@ -7,6 +7,90 @@
     text-align: center;
 }
 
-.individualPost {
-    background-color: aqua;
+.postList {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;   
+    /* align-content: center; */
+    /* justify-content: center; */
+    width: 80%;
+    /* background-color: yellow; */
 }
+
+
+
+.individualPost {
+    /* background-color: aqua; */
+    width: 100%;
+    padding: 30px;
+    /* border: rgb(239, 6, 6) 10px solid; */
+    margin: 0;
+    border-bottom: 3px white solid;
+    border-width: 98%;
+}
+
+.individualPost h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+    /* border: white 10px solid; */
+    
+}
+
+.PostForm {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 20px;
+}
+
+.PostForm input {
+    min-height: 6vh;
+}
+.PostForm textarea {
+    min-height: 60vh;
+}
+
+.PostForm button {
+    height: 40px;
+}
+
+.quillEditor {
+    background-color: white;
+    color: black;
+}
+
+.quillEditor p, .quillEditor h1, .quillEditor a, .quillEditor h2, .quillEditor h3, .quillEditor ol, .quillEditor ul, .quillEditor li {
+    color: black
+}
+
+.ql-container {
+    color: black;
+}
+
+.postContent {
+    font-size: 16px;
+    line-height: 1.6;
+    color: black;
+    /* background-color: white; */
+    /* padding: 10px; */
+    border-radius: 5px;
+    word-wrap: break-word;
+  }
+
+.postContent br {
+    display: block;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+/* .quillEditor {
+    margin: 10px 0;
+    background: white;
+
+  }
+  .ql-container {
+    min-height: 150px;
+  } */
+  

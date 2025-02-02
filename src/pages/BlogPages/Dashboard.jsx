@@ -12,19 +12,21 @@ const Dashboard = () => {
   const navigate = useNavigate();
   const [posts, setPosts] = useState([]);
 
+  // Fetch posts from MongoDB (Runs on refresh and mount)
   useEffect(() => {
     fetchPosts();
   }, []);
 
-  // Fetch posts from MongoDB (Public)
   const fetchPosts = async () => {
     try {
       const res = await axios.get(API_URL);
+      console.log("Fetched posts from MongoDB:", res.data); // Debugging log
       setPosts(res.data);
     } catch (error) {
       console.error("Error fetching posts:", error);
     }
   };
+  
 
   // Add a new post to MongoDB (Only if logged in)
   const addPost = async (post) => {
@@ -33,8 +35,8 @@ const Dashboard = () => {
       return;
     }
     try {
-      const res = await axios.post(API_URL, post);
-      setPosts([res.data, ...posts]); // Add new post at the beginning
+      await axios.post(API_URL, post);
+      fetchPosts(); // Refresh posts from DB after adding
     } catch (error) {
       console.error("Error adding post:", error);
     }
@@ -47,8 +49,8 @@ const Dashboard = () => {
       return;
     }
     try {
-      const res = await axios.put(`${API_URL}/${id}`, updatedPost);
-      setPosts(posts.map((post) => (post._id === id ? res.data : post)));
+      await axios.put(`${API_URL}/${id}`, updatedPost);
+      fetchPosts(); // Refresh posts after edit
     } catch (error) {
       console.error("Error updating post:", error);
     }
@@ -62,7 +64,7 @@ const Dashboard = () => {
     }
     try {
       await axios.delete(`${API_URL}/${id}`);
-      setPosts(posts.filter((post) => post._id !== id)); // Remove from UI
+      fetchPosts(); // Refresh posts after deletion
     } catch (error) {
       console.error("Error deleting post:", error);
     }
@@ -70,7 +72,7 @@ const Dashboard = () => {
 
   return (
     <div>
-      <h2>Blog</h2>
+      <h1>Dashboard</h1>
       {user && <PostForm addPost={addPost} />}
       <PostList posts={posts} onDelete={user ? deletePost : null} onEdit={user ? editPost : null} user={user} />
     </div>
