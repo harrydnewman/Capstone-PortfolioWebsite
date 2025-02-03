@@ -3,6 +3,8 @@ import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import styles from "../styles/Blog.module.css";
 
+import { Link } from "react-router-dom";
+
 const PostList = ({ posts, onDelete, onEdit, user }) => {
   const [editingPostId, setEditingPostId] = useState(null);
   const [editTitle, setEditTitle] = useState("");
@@ -10,8 +12,8 @@ const PostList = ({ posts, onDelete, onEdit, user }) => {
   const [editBlog, setEditBlog] = useState("")
 
   const Blogs = [
-    "Capstone",
-    "Critical Experiences"
+    "capstone",
+    "criticalexperiences"
   ]
 
   // Enable edit mode
@@ -89,6 +91,7 @@ const PostList = ({ posts, onDelete, onEdit, user }) => {
               // View Mode
               <div className={styles.individualPost}>
                 <h2>{post.title}</h2>
+                <h3>{post.id}</h3>
                 <div
                   className={styles.postContent}
                   dangerouslySetInnerHTML={{ __html: post.content }}
@@ -100,6 +103,7 @@ const PostList = ({ posts, onDelete, onEdit, user }) => {
                     <button onClick={() => onDelete(post._id)}>Delete</button>
                   </>
                 )}
+                <Link to={`/blog/${post.blog}/post/${post._id}`}> <p>Open To View Post Individually</p> </Link>
               </div>
             )}
           </div>

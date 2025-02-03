@@ -2,7 +2,7 @@
 
 ## To Do
 
-- Optimize for Mobile and smaller screens
+- Add page for individual blog posts
 
 
 ### Add Portfolio Pages for Following Items:

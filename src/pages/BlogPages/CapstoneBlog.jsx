@@ -15,7 +15,7 @@ export default function CapstoneBlog() {
     }, []);
 
     const organizePosts = (posts) => {
-        const postsList = posts.filter(post => post.blog === "Capstone");
+        const postsList = posts.filter(post => post.blog === "capstone");
         setBlogPosts(postsList);
     };
 

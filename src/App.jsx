@@ -30,6 +30,11 @@ import Velociraptor from "./pages/portfoliopages/Velociraptor";
 import Zipcodeclock from "./pages/portfoliopages/ZipCodeClock";
 import GermanDepartment from "./pages/portfoliopages/GermanDepartment";
 
+import PostPage from "./pages/BlogPages/PostPage";
+
+// Inside the <Routes> block:
+
+
 // Blog Pages
 import Login from "./pages/BlogPages/Login";
 import { AuthProvider } from "./AuthContext";
@@ -77,6 +82,7 @@ function App() {
         <Route path="/blog/dashboard" element={<Dashboard/>}/>
         <Route path="/blog/criticalexperiences" element={<CriticalExperiencesBlog/>}/>
         <Route path="/blog/capstone" element={<CapstoneBlog/>}/>  
+        <Route path="/blog/:blog/post/:id" element={<PostPage />} />
 
         <Route path="*" element={<NotFound/>}/>
       </Routes>

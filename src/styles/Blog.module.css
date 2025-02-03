@@ -211,6 +211,18 @@
   font-size: 30px;
 }
 
+.postContainer {
+  /* background-color: aqua; */
+  width: 100%;
+  padding: 5%;
+  padding-top: 30px;
+  /* border: rgb(239, 6, 6) 10px solid; */
+  margin: 0;
+  /* border-bottom: 3px white solid; */
+  min-height: 100vh;
+  border-width: 98%;
+}
+
 @media (max-width: 768px) {
   .PostForm {
     width: 100%;

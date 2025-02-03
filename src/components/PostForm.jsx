@@ -5,14 +5,14 @@ import styles from "../styles/Blog.module.css";
 
 const PostForm = ({ addPost }) => {
   const Blogs = [
-    "Capstone",
-    "Critical Experiences"
+    "capstone",
+    "criticalexperiences"
   ]
 
 
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
-  const [blog, setBlog] = useState("Capstone")
+  const [blog, setBlog] = useState("capstone")
 
   const handleSubmit = (e) => {
     e.preventDefault();

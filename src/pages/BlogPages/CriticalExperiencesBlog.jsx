@@ -15,7 +15,7 @@ export default function CriticalExperiencesBlog() {
     }, []);
 
     const organizePosts = (posts) => {
-        const postsList = posts.filter(post => post.blog === "Critical Experiences");
+        const postsList = posts.filter(post => post.blog === "criticalexperiences");
         setBlogPosts(postsList);
     };
 
