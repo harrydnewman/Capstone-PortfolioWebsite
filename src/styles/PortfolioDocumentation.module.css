@@ -127,8 +127,14 @@ a {
     width: 100%;
 }
 
+.shorterDocumentation p {
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding: 0px;
+}
+
 .iframeContainer {
-   background-color: green;
+   /* background-color: green; */
    width: 100%;
     height: 50vh;
     
@@ -139,11 +145,7 @@ a {
     /* width: 100%; */
 }
 
-.shorterDocumentation p {
-    margin-bottom: 10px;
-    margin-top: 5px;
-    padding: 0px;
-}
+
 
 .iframeContainer iframe {
     width: 100%;
@@ -164,7 +166,7 @@ a {
 }
 
 .youtubeiFrame {
-    background-color: green;
+    /* background-color: green; */
     width: 100%;
      height: 60vh;
      
@@ -197,5 +199,31 @@ a {
 }
 
 @media (max-width: 768px) {
-   
-  }
+   .shorterDocumentation {
+    padding-left: 15px;
+    padding-right: 15px;
+   }
+   .bodySection {
+    flex-direction: column;
+   }
+   .TableOfContents {
+    width: 100%;
+    position: relative;
+    height: auto;
+   }
+   .documentation {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+   }
+
+   .documentation img {
+    max-width: 100%;
+    height: auto;
+   }
+    .youtubeiFrame {
+        margin-bottom: 10px !important;
+        margin-top: 20px;
+    }
+}
+  

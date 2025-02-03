@@ -2,3 +2,30 @@
     text-align: center;
     width: 100%;
 }
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* When screen width is less than 768px, stack elements vertically */
+@media (max-width: 767px) {
+    .details {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .details h1, .details span {
+        font-size: 20px;
+    }
+}
+
+/* When screen width is 768px or more, keep elements in a single row */
+@media (min-width: 768px) {
+    .details span:not(:last-child)::after {
+        content: " | ";
+        margin: 0 5px;
+    }
+}
