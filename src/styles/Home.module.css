@@ -219,3 +219,92 @@ a {
 .LinkToRestOfPortfolioDiv:hover {
  cursor: pointer;
 }
+
+
+@media (max-width: 768px) {
+  .main {
+    width: 100%;
+  }
+  .introduction {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 50px;
+    height: 80vh;
+   
+  }
+
+  .info {
+    padding: 0;
+    padding-left: 10% !important;
+    
+    width: 100%;
+    margin: 0;
+  }
+
+  .name h1 {
+    font-size: 50px;
+  }
+
+  .imageAndLinks {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pictureOfMe {
+    width: 100%;
+    /* background-color: rgb(13, 128, 0); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pictureOfMe img {
+    width: 60%;
+  }
+
+  .links img.githubImage {
+    height: 7vh !important;
+    margin-right: 7px;
+    /* background-color: purple !important; */
+  }
+  
+  .links img.linkedinimage {
+    height: 5vh !important;
+    /* background-color: purple !important; */
+  }
+
+  .featuredProjects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .LinkToRestOfPortfolioDiv {
+    width: 90%;
+    
+  }
+
+  .LinkToRestOfPortfolioDiv h2{
+    font-size: 30px;
+    padding: 5px;
+  }
+
+  .skills h1 {
+    font-size: 40px;
+  }
+  .skills h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  .SkillIconRow {
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+}
