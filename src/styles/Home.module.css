@@ -220,15 +220,39 @@ a {
  cursor: pointer;
 }
 
-/* @media (max-width: 1000px) {
-  .pictureOfMe img {
-    width: 70%;
-    border-radius: 10px;
+/* @media (max-width: 1000px) { */
+  /* .introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  } */
+  /* .pictureOfMe img {
+    display: none;
   }
-  .imageAndLinks {
-    width: 40%;
+
+  .emailAndLinks {
+    flex-direction: column;
+    align-items: flex-start;
+    
+  
   }
-} */
+  .email a {
+    font-size: 30px;
+  }
+  .email {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .links {
+    margin-left: 50px;
+  } */
+/* } */
 
 @media (max-width: 768px) {
   .main {
@@ -240,6 +264,8 @@ a {
     align-items: flex-start;
     padding-top: 50px;
     height: 80vh;
+    padding: auto;
+    margin: auto;
    
   }
 
@@ -272,6 +298,7 @@ a {
   }
   .pictureOfMe img {
     width: 60%;
+    display: flex;
   }
 
   .links img.githubImage {
