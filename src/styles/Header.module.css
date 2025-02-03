@@ -1,45 +1,45 @@
 .HeaderDiv {
-    width: 98%;
-    background-color: rgb(72, 148, 123);
-    /* height: 20px; */
-    /* margin-top: 0 !important; */
-    padding-top: 0 !important;
-    border-radius: 30px;
-    padding-left: 3%;
-    padding-right: 3%;
-    /* padding-bottom: 2%; */
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-top: 1%;
-
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background-color: rgb(72, 148, 123);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.HeaderDiv a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    font-size: 1.8rem;
+}
+
+.HeaderDiv a:hover {
+    color: #0070f3;
+}
 
 .links {
-    width: 22%;
-    /* background-color: aqua; */
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.HeaderDiv h3, .HeaderDiv a {
-    font-size: 40px;
-    padding: 0;
-    margin: 0;
-    font-family: "Lexend", sans-serif;
-  font-weight: 400;
-  color: white;
+    gap: 1.5rem;
 }
 
-
-@media (max-width: 399px) {
+@media (max-width: 768px) {
     .HeaderDiv {
-        font-size: 10px;
-        color: purple;
-        background-color: green;
+        flex-direction: row;
+        text-align: center;
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .links {
+        flex-direction: row;
+        gap: 0.75rem;
+        margin-top: 0.5rem;
+    }
+
+    .HeaderDiv a {
+        font-size: 1rem;
     }
 }
