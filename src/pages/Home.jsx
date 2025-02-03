@@ -101,7 +101,7 @@ export default function Home() {
                 {/* add cute link to more projects */}
 
                 <div className={styles.featuredProjects}>
-                    <h1>Projects</h1>
+                    <a href='/portfolio'><h1>Projects</h1></a>
                     {/* <div className={styles.featuredProjectsDiv}>
                         <div className={styles.featuredProjectDiv}>
                             <img className={styles.horizontalImage} src={CuntyRoadsImage} alt='cunty roads animal dancing'/>
@@ -117,9 +117,9 @@ export default function Home() {
                         </div>
                         
                     </div>  */}
-                    <div className={styles.LinkToRestOfPortfolioDiv}>
+                    {/* <div className={styles.LinkToRestOfPortfolioDiv}>
                         <a href='/portfolio'><h2>View Portfolio</h2></a>
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* </div> */}
