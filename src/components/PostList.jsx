@@ -45,7 +45,7 @@ const PostList = ({ posts, onDelete, onEdit, user }) => {
 
   return (
     <div className={styles.postList}>
-      {posts.length === 0 ? <p>No posts available</p> : posts.map((post) => {
+      {posts.length === 0 ? <div className={styles.noPostsDiv}><p>No posts available</p></div> : posts.map((post) => {
         const formattedDate = new Date(post.date).toLocaleString("en-US", {
           year: "numeric",
           month: "short",

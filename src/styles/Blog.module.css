@@ -1,105 +1,153 @@
 .blogPage {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 .blogPage h1 {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .postList {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;   
-    /* align-content: center; */
-    /* justify-content: center; */
-    width: 80%;
-    /* background-color: yellow; */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  /* align-content: center; */
+  /* justify-content: center; */
+  width: 80%;
+  /* background-color: yellow; */
 }
 
-
-
 .individualPost {
-    /* background-color: aqua; */
-    width: 100%;
-    padding: 30px;
-    /* border: rgb(239, 6, 6) 10px solid; */
-    margin: 0;
-    border-bottom: 3px white solid;
-    border-width: 98%;
+  /* background-color: aqua; */
+  width: 100%;
+  padding: 30px;
+  /* border: rgb(239, 6, 6) 10px solid; */
+  margin: 0;
+  border-bottom: 3px white solid;
+  border-width: 98%;
 }
 
 .individualPost h2 {
-    padding: 0;
-    margin: 0;
-    margin-bottom: 10px !important;
-    font-size: 40px;
-    /* border: white 10px solid; */
-    
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px !important;
+  font-size: 40px;
+  /* border: white 10px solid; */
 }
 
 .postDate {
-    margin-top: 20px;
-    font-style: italic;
-    /* margin-bottom: 20px; */
+  margin-top: 20px;
+  font-style: italic;
+  /* margin-bottom: 20px; */
 }
 
 .PostForm {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 20px;
 }
 
 .PostForm select {
-    min-height: 6vh;
+  min-height: 6vh;
 }
 
 .PostForm input {
-    min-height: 6vh;
+  min-height: 6vh;
 }
 .PostForm textarea {
-    min-height: 60vh;
+  min-height: 60vh;
 }
 
 .PostForm button {
-    height: 40px;
+  height: 40px;
 }
 
 .quillEditor {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
-.quillEditor p, .quillEditor h1, .quillEditor a, .quillEditor h2, .quillEditor h3, .quillEditor ol, .quillEditor ul, .quillEditor li {
-    color: black
+.quillEditor p,
+.quillEditor h1,
+.quillEditor a,
+.quillEditor h2,
+.quillEditor h3,
+.quillEditor ol,
+.quillEditor ul,
+.quillEditor li {
+  color: black;
 }
 
 .quillEditor p {
-    font-size: 20px;
+  font-size: 20px;
 }
 .ql-container {
-    color: black;
-    
+  color: black;
 }
 
 .postContent {
-    font-size: 16px;
-    line-height: 1.6;
-    color: black;
-    /* background-color: white; */
-    /* padding: 10px; */
-    border-radius: 5px;
-    word-wrap: break-word;
-  }
+  font-size: 16px;
+  line-height: 1.6;
+  color: white !important;
+  word-wrap: break-word;
+}
+
+.postContent h1,
+.postContent h2,
+.postContent h3,
+.postContent h4,
+.postContent h5,
+.postContent h6,
+.postContent p,
+.postContent a,
+.postContent ol,
+.postContent ul,
+.postContent strong,
+.postContent em,
+.postContent li,
+.postContent span {
+  color: white !important;
+}
+
+.postContent h1 {
+  font-size: 38px;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}
+.postContent h2 {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  font-size: 32px;
+}
+
+.postContent a {
+  margin: 0;
+  padding: 0;
+  /* margin-top: 5px; */
+  font-size: 25px;
+}
+
+.postContent h3 {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  font-size: 28px;
+}
+
+.postContent ul {
+  /* padding: 0; */
+  margin-top: 5px;
+}
 
 .postContent p {
-    display: block;
-    /* height: 0 !important; */
-    margin: 0 !important;
-    padding: 0 !important;
-  }
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+}
 
 /* .quillEditor {
     margin: 10px 0;
@@ -110,75 +158,85 @@
     min-height: 150px;
   } */
 
+.BlogNavButtonsDiv {
+  width: 100%;
+}
+.BlogNavButtons {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+
+  align-content: center !important;
+  margin: 10%;
+  margin-top: 0;
+}
+
+.BlogNavButton {
+  margin: 10px;
+  background-color: rgb(25, 70, 70);
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  transition: 0.2s linear;
+  border-radius: 10px;
+  /* border: 10px solid purple; */
+}
+
+.BlogNavButton img {
+  max-height: 40px;
+}
+
+.BlogNavButton p {
+  font-size: 40px;
+  text-decoration: none !important;
+}
+
+.BlogNavButton:hover {
+  transform: scale(1.01);
+}
+.noPostsDiv {
+  /* background-color: aqua; */
+  display: flex;
+  /* flex-direction: ;  */
+  align-items: flex-end;
+  justify-content: center;
+  min-height: 20vh;
+}
+
+.noPostsDiv p {
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .PostForm {
+    width: 100%;
+    padding: 3%;
+    margin: 0;
+  }
+
+  .postList {
+    width: 100%;
+  }
+
+  .postList h2 {
+    font-size: 30px;
+  }
+
   .BlogNavButtonsDiv {
-    width: 100%;
+    width: 95%;
   }
+
   .BlogNavButtons {
-    display: flex;
-    width: 80%;
-    flex-direction: column;
-    
-    align-content: center !important;
-    margin: 10%;
-    margin-top: 0;
-  }
-
-  .BlogNavButton {
-    margin: 10px;
-    background-color: rgb(25, 70, 70);
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
     width: 100%;
-    transition: 0.2s linear;
-    border-radius: 10px;
-    /* border: 10px solid purple; */
+    padding: 0;
+    margin: 0;
   }
 
-  .BlogNavButton img {
-    max-height: 40px;
-  }
-  
   .BlogNavButton p {
-    font-size: 40px;
-    text-decoration: none !important;
+    font-size: 30px;
   }
-
-  .BlogNavButton:hover {
-    transform: scale(1.01);
-  }
-
-  
-
-  @media (max-width: 768px) {
-    .PostForm {
-        width: 100%;
-        padding: 3%;
-        margin: 0;
-    }
-
-    .postList {
-        width: 100%;
-    }
-
-    .postList h2 {
-        font-size: 30px;
-    }
-
-    .BlogNavButtonsDiv {
-        width: 95%;
-    }
-
-    .BlogNavButtons {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-    }
-
-    .BlogNavButton p {
-        font-size: 30px;
-    }
 }

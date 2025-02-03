@@ -81,7 +81,7 @@ export default function Home() {
                         <div className={styles.emailAndLinks}>
                             <div className={styles.email}>
                                 <a href='mailto:harrydnewman@gmail.com'>harrydnewman@gmail.com</a>
-                                <a href='/'>Resume</a>
+                                <a href='https://media.harrydnewman.com/uploads/ResumePDF.pdf' target='_blank'>Resume</a>
                             </div>
                             <div className={styles.links}>
                                 <a href='https://github.com/harrydnewman/' target="_blank"><img className={styles.githubImage} src={GitHubImage} alt='github link' /></a>
@@ -118,7 +118,7 @@ export default function Home() {
                         
                     </div>  */}
                     <div className={styles.LinkToRestOfPortfolioDiv}>
-                        <a href='/portfolio'><h2>View Portfolio --&gt;</h2></a>
+                        <a href='/portfolio'><h2>View Portfolio</h2></a>
                     </div>
                 </div>
 

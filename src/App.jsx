@@ -6,8 +6,6 @@ import RedirectBrainrot from "./pages/RedirectBrainrot";
 
 import Blog from "./pages/Blog";
 
-import Resume from "./pages/Resume";
-
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -39,6 +37,7 @@ import Dashboard from "./pages/BlogPages/Dashboard";
 import CapstoneBlog from "./pages/BlogPages/CapstoneBlog";
 import CriticalExperiencesBlog from "./pages/BlogPages/CriticalExperiencesBlog";
 
+import NotFound from "./pages/NotFound";
 function App() {
   return (
     <div className="App">
@@ -78,6 +77,8 @@ function App() {
         <Route path="/blog/dashboard" element={<Dashboard/>}/>
         <Route path="/blog/criticalexperiences" element={<CriticalExperiencesBlog/>}/>
         <Route path="/blog/capstone" element={<CapstoneBlog/>}/>  
+
+        <Route path="*" element={<NotFound/>}/>
       </Routes>
       <Footer />
     </Router>
