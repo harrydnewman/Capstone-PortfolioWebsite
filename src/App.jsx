@@ -32,9 +32,13 @@ import Velociraptor from "./pages/portfoliopages/Velociraptor";
 import Zipcodeclock from "./pages/portfoliopages/ZipCodeClock";
 import GermanDepartment from "./pages/portfoliopages/GermanDepartment";
 
+// Blog Pages
 import Login from "./pages/BlogPages/Login";
 import { AuthProvider } from "./AuthContext";
 import Dashboard from "./pages/BlogPages/Dashboard";
+import CapstoneBlog from "./pages/BlogPages/CapstoneBlog";
+import CriticalExperiencesBlog from "./pages/BlogPages/CriticalExperiencesBlog";
+
 function App() {
   return (
     <div className="App">
@@ -72,6 +76,8 @@ function App() {
 
         <Route path="/login" element={<Login/>}/>
         <Route path="/blog/dashboard" element={<Dashboard/>}/>
+        <Route path="/blog/criticalexperiences" element={<CriticalExperiencesBlog/>}/>
+        <Route path="/blog/capstone" element={<CapstoneBlog/>}/>  
       </Routes>
       <Footer />
     </Router>
