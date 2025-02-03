@@ -11,7 +11,7 @@ export default function CapstoneBlog() {
     // Fetch posts from MongoDB (Runs on refresh and mount)
     useEffect(() => {
         fetchPosts();
-        
+
     }, []);
 
     const organizePosts = (posts) => {
@@ -33,7 +33,8 @@ export default function CapstoneBlog() {
     return (
         <div className={styles.BlogPage}>
             <h1>Capstone Blog</h1>
-                <PostList posts={blogPosts} onDelete={() => { }} />
+            <PostList posts={blogPosts} onDelete={() => { }} />
+            <a href="/blog"><p><i>Return to Blog Page</i></p></a>
         </div>
     )
 }

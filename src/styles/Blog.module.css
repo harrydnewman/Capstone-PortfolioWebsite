@@ -100,4 +100,47 @@
   .ql-container {
     min-height: 150px;
   } */
+
+  .BlogNavButtonsDiv {
+    width: 100%;
+  }
+  .BlogNavButtons {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    
+    align-content: center !important;
+    margin: 10%;
+    margin-top: 0;
+  }
+
+  .BlogNavButton {
+    margin: 10px;
+    background-color: rgb(25, 70, 70);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    transition: 0.2s linear;
+    border-radius: 10px;
+    /* border: 10px solid purple; */
+  }
+
+  .BlogNavButton img {
+    max-height: 40px;
+  }
   
+  .BlogNavButton a {
+    font-size: 35px;
+    font-style: none;
+  }
+
+  .BlogNavButton:hover {
+    transform: scale(1.01);
+  }
+
+  
+

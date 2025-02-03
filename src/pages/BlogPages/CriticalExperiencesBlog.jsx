@@ -34,6 +34,7 @@ export default function CriticalExperiencesBlog() {
         <div className={styles.BlogPage}>
            <h1>Critical Experiences Blog</h1>
                 <PostList posts={blogPosts} onDelete={() => { }} />
+                <a href="/blog"><p><i>Return to Blog Page</i></p></a>
         </div>
     )
 }
