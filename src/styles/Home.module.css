@@ -31,7 +31,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-    /* background-color: purple; */
+  /* background-color: purple; */
   color: white;
 }
 
@@ -125,9 +125,10 @@ a {
     background-color: green !important;
 } */
 
-.skills h1, .educationandworkexperience h1 {
-    font-size: 60px;
-    margin-bottom: 0px;
+.skills h1,
+.educationandworkexperience h1 {
+  font-size: 60px;
+  margin-bottom: 0px;
 }
 /* 
 .educationandworkexperience h1 {
@@ -136,30 +137,30 @@ a {
 } */
 
 .skills h2 {
-    font-size: 50px;
-    margin-top: 5px;
-    margin-bottom: 25px;
+  font-size: 50px;
+  margin-top: 5px;
+  margin-bottom: 25px;
 }
 
 .skills {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    /* background-color: aqua; */
-    align-items: center;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  /* background-color: aqua; */
+  align-items: center;
 }
 
 .skillIconDiv {
-    width: 100%;
-    margin-top: 10px;
+  width: 100%;
+  margin-top: 10px;
 }
 
 .SkillIconRow {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    justify-content: center;
-    margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 .featuredProjects {
   width: 100%;
@@ -180,7 +181,8 @@ a {
   flex-direction: row;
 }
 
-.featuredProjectDiv, .catalistFeaturedProjectDiv {
+.featuredProjectDiv,
+.catalistFeaturedProjectDiv {
   display: flex;
   flex-direction: column;
 }
@@ -217,11 +219,49 @@ a {
 }
 
 .LinkToRestOfPortfolioDiv:hover {
- cursor: pointer;
+  cursor: pointer;
 }
 
+
+  .skillIcon {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 10vw; /* Initial width same as image */
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .skillIcon img {
+    width: 10vw;
+    aspect-ratio: 1 / 1;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .skillText {
+    opacity: 0;
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 1rem;
+    position: absolute;
+    left: calc(10vw + 10px); /* Position the text just outside the image */
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .skillIcon:hover {
+    width: calc(10vw + 20px + var(--text-width, 100px)); /* Expands based on text width */
+  }
+  
+  .skillIcon:hover .skillText {
+    opacity: 1;
+  }
+  
+
 /* @media (max-width: 1000px) { */
-  /* .introduction {
+/* .introduction {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -231,7 +271,7 @@ a {
     padding: 0;
     margin: 0;
   } */
-  /* .pictureOfMe img {
+/* .pictureOfMe img {
     display: none;
   }
 
@@ -266,13 +306,12 @@ a {
     height: 80vh;
     padding: auto;
     margin: auto;
-   
   }
 
   .info {
     padding: 0;
     padding-left: 10% !important;
-    
+
     width: 100%;
     margin: 0;
   }
@@ -306,7 +345,7 @@ a {
     margin-right: 7px;
     /* background-color: purple !important; */
   }
-  
+
   .links img.linkedinimage {
     height: 5vh !important;
     /* background-color: purple !important; */
@@ -317,15 +356,13 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
   }
 
   .LinkToRestOfPortfolioDiv {
     width: 90%;
-    
   }
 
-  .LinkToRestOfPortfolioDiv h2{
+  .LinkToRestOfPortfolioDiv h2 {
     font-size: 30px;
     padding: 5px;
   }
