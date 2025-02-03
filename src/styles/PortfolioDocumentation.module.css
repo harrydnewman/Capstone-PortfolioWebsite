@@ -195,3 +195,7 @@ a {
     height: auto;
     border-radius: 15px;
 }
+
+@media (max-width: 768px) {
+   
+  }

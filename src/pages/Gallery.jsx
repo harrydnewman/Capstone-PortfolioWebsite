@@ -11,6 +11,7 @@ import TruthOrDareImage from '../assets/images/TruthorDare/preview.png'
 import JimmyBuffettImage from '../assets/images/JimmyBuffett/preview.png'
 import ChatTechImage from '../assets/images/ChatTech/chathomepage.gif'
 import VelociraptorImage from '../assets/images/Velociraptor/preview.png'
+
 export default function Gallery() {
     const portfolioItems = [
         {

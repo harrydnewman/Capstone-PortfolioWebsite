@@ -90,3 +90,13 @@ h1 {
 .note {
     padding-left: 40px;
 }
+
+@media (max-width: 768px) {
+    .Gallery {
+        column-count: 1;
+        margin-bottom: 5px;
+    }
+    .note {
+        width: 80%;
+    }
+  }
