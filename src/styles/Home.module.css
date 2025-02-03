@@ -220,6 +220,15 @@ a {
  cursor: pointer;
 }
 
+/* @media (max-width: 1000px) {
+  .pictureOfMe img {
+    width: 70%;
+    border-radius: 10px;
+  }
+  .imageAndLinks {
+    width: 40%;
+  }
+} */
 
 @media (max-width: 768px) {
   .main {
