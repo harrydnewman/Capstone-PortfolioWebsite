@@ -35,7 +35,7 @@ const PostList = ({ posts, onDelete, onEdit, user }) => {
   // Quill Editor Modules
   const modules = {
     toolbar: [
-      [{ header: [1, 2, false] }],
+      [{ header: [1, 2, 3, 4, 5, false] }],
       ["bold", "italic", "underline", "strike"],
       [{ list: "ordered" }, { list: "bullet" }],
       ["link"],
