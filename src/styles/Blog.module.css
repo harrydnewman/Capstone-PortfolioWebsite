@@ -153,3 +153,32 @@
 
   
 
+  @media (max-width: 768px) {
+    .PostForm {
+        width: 100%;
+        padding: 3%;
+        margin: 0;
+    }
+
+    .postList {
+        width: 100%;
+    }
+
+    .postList h2 {
+        font-size: 30px;
+    }
+
+    .BlogNavButtonsDiv {
+        width: 95%;
+    }
+
+    .BlogNavButtons {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .BlogNavButton p {
+        font-size: 30px;
+    }
+}

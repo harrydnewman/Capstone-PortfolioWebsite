@@ -9,10 +9,10 @@
 
 .HeaderDiv a {
     text-decoration: none;
-    color: #333;
+    color: #e5dddd;
     font-weight: bold;
     transition: color 0.3s ease-in-out;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 .HeaderDiv a:hover {
@@ -24,22 +24,30 @@
     gap: 1.5rem;
 }
 
+/* Fix for mobile view */
 @media (max-width: 768px) {
     .HeaderDiv {
         flex-direction: row;
-        text-align: center;
-        padding: 1rem;
         justify-content: center;
         align-items: center;
-    }
-
-    .links {
-        flex-direction: row;
-        gap: 0.75rem;
-        margin-top: 0.5rem;
+        text-align: center;
+        padding: 1rem;
+        justify-content: space-evenly;
     }
 
     .HeaderDiv a {
-        font-size: 1rem;
+        font-size: 1.5rem; /* Slightly larger for readability */
+        /* background-color: green; */
+    }
+
+    .links {
+        display: flex;
+        flex-direction: row; /* Align links vertically */
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .links a {
+        font-size: 1.5rem; /* Adjust font size for better readability */
     }
 }
