@@ -4,12 +4,19 @@ import "react-quill/dist/quill.snow.css"; // Import default Quill styles
 import styles from "../styles/Blog.module.css";
 
 const PostForm = ({ addPost }) => {
+  const Blogs = [
+    "Capstone",
+    "Critical Experiences"
+  ]
+
+
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
+  const [blog, setBlog] = useState()
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addPost({ title, content });
+    addPost({ blog, title, content });
     setTitle("");
     setContent(""); // Clears content after posting
   };
@@ -25,9 +32,21 @@ const PostForm = ({ addPost }) => {
     ],
   };
 
+  const handleChange = (event) => {
+    setBlog(event.target.value);
+  };
+
   return (
     <form className={styles.PostForm} onSubmit={handleSubmit}>
       <h2>New Post</h2>
+      <select id="blog" value={blog} onChange={handleChange}>
+        <option value="" disabled>Select a Blog to Post To</option>
+        {Blogs.map((blog) => (
+          <option key={blog} value={blog}>
+            {blog}
+          </option>
+        ))}
+      </select>
       <input 
         type="text" 
         placeholder="Title" 
