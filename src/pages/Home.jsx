@@ -179,6 +179,7 @@ export default function Home() {
 
             {/* <h1>Education and Work Experience</h1> */}
             {/* do it how that one guy had it for his portfolio where its like a timeline */}
+            {/* bruh */}
         </div>
     )
 }
