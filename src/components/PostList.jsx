@@ -1,24 +1,35 @@
 import { useState } from "react";
-import ReactQuill from "react-quill"; 
-import "react-quill/dist/quill.snow.css"; 
+import ReactQuill from "react-quill";
+import "react-quill/dist/quill.snow.css";
 import styles from "../styles/Blog.module.css";
 
 const PostList = ({ posts, onDelete, onEdit, user }) => {
   const [editingPostId, setEditingPostId] = useState(null);
   const [editTitle, setEditTitle] = useState("");
   const [editContent, setEditContent] = useState("");
+  const [editBlog, setEditBlog] = useState("")
+
+  const Blogs = [
+    "Capstone",
+    "Critical Experiences"
+  ]
 
   // Enable edit mode
   const handleEditClick = (post) => {
     setEditingPostId(post._id);
     setEditTitle(post.title);
     setEditContent(post.content);
+    setEditBlog(post.blog)
   };
 
   // Save changes
   const handleSaveClick = (id) => {
-    onEdit(id, { title: editTitle, content: editContent });
+    onEdit(id, { blog: editBlog, title: editTitle, content: editContent });
     setEditingPostId(null);
+  };
+
+  const handleChange = (event) => {
+    setEditBlog(event.target.value);
   };
 
   // Quill Editor Modules
@@ -50,6 +61,14 @@ const PostList = ({ posts, onDelete, onEdit, user }) => {
               // Edit Mode with Quill
               <div className={styles.PostForm}>
                 <h2>Editing Post</h2>
+                <select id="blog" value={editBlog} onChange={handleChange}>
+                  <option value="" disabled>Select a Blog to Post To</option>
+                  {Blogs.map((blog) => (
+                    <option key={blog} value={blog}>
+                      {blog}
+                    </option>
+                  ))}
+                </select>
                 <input
                   type="text"
                   value={editTitle}
@@ -70,9 +89,9 @@ const PostList = ({ posts, onDelete, onEdit, user }) => {
               // View Mode
               <div className={styles.individualPost}>
                 <h2>{post.title}</h2>
-                <div 
-                  className={styles.postContent} 
-                  dangerouslySetInnerHTML={{ __html: post.content }} 
+                <div
+                  className={styles.postContent}
+                  dangerouslySetInnerHTML={{ __html: post.content }}
                 />
                 <p className={styles.postDate}>Posted on: {formattedDate}</p>
                 {user && (

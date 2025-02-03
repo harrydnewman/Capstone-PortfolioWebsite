@@ -5,6 +5,7 @@
 .blogPage h1 {
     width: 100%;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .postList {
@@ -51,6 +52,10 @@
     margin-left: 20px;
 }
 
+.PostForm select {
+    min-height: 6vh;
+}
+
 .PostForm input {
     min-height: 6vh;
 }
@@ -71,8 +76,12 @@
     color: black
 }
 
+.quillEditor p {
+    font-size: 20px;
+}
 .ql-container {
     color: black;
+    
 }
 
 .postContent {
@@ -133,9 +142,9 @@
     max-height: 40px;
   }
   
-  .BlogNavButton a {
-    font-size: 35px;
-    font-style: none;
+  .BlogNavButton p {
+    font-size: 40px;
+    text-decoration: none !important;
   }
 
   .BlogNavButton:hover {

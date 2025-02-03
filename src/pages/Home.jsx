@@ -3,6 +3,7 @@ import PictureOfMe from '../assets/images/Home/me.png'
 import GitHubImage from '../assets/images/Home/github.png'
 import LinkedinImage from '../assets/images/Home/linkedin.webp'
 import SkillIcon from '../components/SkillIcon'
+import ArrowIcon from '../assets/icons/arrow.png'
 import TimeLine from '../components/TimeLine'
 
 import CatalistImage from '../assets/images/Catalist/preview.png'

@@ -12,7 +12,7 @@ const PostForm = ({ addPost }) => {
 
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
-  const [blog, setBlog] = useState()
+  const [blog, setBlog] = useState("Capstone")
 
   const handleSubmit = (e) => {
     e.preventDefault();

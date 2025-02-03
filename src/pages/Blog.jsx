@@ -5,11 +5,11 @@ import axios from "axios";
 import arrowIcon from '../assets/icons/arrow.png'
 
 const API_URL = "https://blog.harrydnewman.com/api/posts";
-export default function Blog(){
-    const [posts, setPosts] = useState([]);
+export default function Blog() {
+  const [posts, setPosts] = useState([]);
 
-   // Fetch posts from MongoDB (Runs on refresh and mount)
-   useEffect(() => {
+  // Fetch posts from MongoDB (Runs on refresh and mount)
+  useEffect(() => {
     fetchPosts();
   }, []);
 
@@ -23,32 +23,32 @@ export default function Blog(){
     }
   };
 
-    return (
-        <div className={styles.blogPage}>
-        <h1>Blogs</h1>
-        <div className={styles.BlogNavButtonsDiv}>
+  return (
+    <div className={styles.blogPage}>
+      <h1>Blogs</h1>
+      <div className={styles.BlogNavButtonsDiv}>
         <div className={styles.BlogNavButtons}>
-        <a href="/blog/capstone">
-        <div className={styles.BlogNavButton}>
-        <a href="/blog/capstone">Capstone</a>
-        <img src={arrowIcon}/>
-        </div>
-        </a>
+          <a href="/blog/capstone">
+            <div className={styles.BlogNavButton}>
+              <p>Capstone</p>
+              <img src={arrowIcon} />
+            </div>
+          </a>
 
-        <a href="/blog/criticalexperiences">
-        <div className={styles.BlogNavButton}>
-        <a href="/blog/criticalexperiences">Critical Experiences</a>
-        <img src={arrowIcon}/>
+          <a href="/blog/criticalexperiences">
+            <div className={styles.BlogNavButton}>
+              <p>Critical Experiences</p>
+              <img src={arrowIcon} />
+            </div>
+          </a>
+
+
         </div>
-        </a>
-         
-         
-        </div>
-        </div>
-       
-        {/* <PostList posts={posts} onDelete={() => {}} /> */}
-        
-        
       </div>
-    )
+
+      {/* <PostList posts={posts} onDelete={() => {}} /> */}
+
+
+    </div>
+  )
 }

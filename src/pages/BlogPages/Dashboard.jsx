@@ -4,6 +4,7 @@ import PostList from "../../components/PostList";
 import PostForm from "../../components/PostForm";
 import { useAuth } from "../../AuthContext";
 import { useNavigate } from "react-router-dom";
+import styles from '../../styles/BlogDashboard.module.css'
 
 const API_URL = "https://blog.harrydnewman.com/api/posts"; // Adjust based on your server
 
@@ -71,7 +72,7 @@ const Dashboard = () => {
   };
 
   return (
-    <div>
+    <div className={styles.BlogDashboard}>
       <h1>Dashboard</h1>
       {user && <PostForm addPost={addPost} />}
       <PostList posts={posts} onDelete={user ? deletePost : null} onEdit={user ? editPost : null} user={user} />
